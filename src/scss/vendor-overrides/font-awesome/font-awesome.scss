@@ -1,0 +1,24 @@
+/*!
+ *  Font Awesome 4.5.0 by @davegandy - http://fontawesome.io - @fontawesome
+ *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
+ */
+
+@import "../../vendor/components-font-awesome/variables";
+
+// Overriding default font-awesome variables
+$fa-font-path:        "../../../fonts/vendor/components-font-awesome";
+
+@import "../../vendor/components-font-awesome/mixins";
+
+// Override default font-awesome _path.scss
+@import "path";
+
+@import "../../vendor/components-font-awesome/core";
+@import "../../vendor/components-font-awesome/larger";
+@import "../../vendor/components-font-awesome/fixed-width";
+@import "../../vendor/components-font-awesome/list";
+@import "../../vendor/components-font-awesome/bordered-pulled";
+@import "../../vendor/components-font-awesome/animated";
+@import "../../vendor/components-font-awesome/rotated-flipped";
+@import "../../vendor/components-font-awesome/stacked";
+@import "../../vendor/components-font-awesome/icons";

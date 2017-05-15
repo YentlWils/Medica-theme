@@ -8,13 +8,14 @@
 function medica_scrip_enqueue(){
 
     // Import the main css file
-    wp_enqueue_style('bootstrap', get_template_directory_uri() . '/css/vendor/bootstrap/bootstrap.min.css', array(), '3.3.4', 'all');
-    wp_enqueue_style("custom style", get_template_directory_uri() . "/css/medica.css", array(), "1.0.0", "all");
+    wp_enqueue_style('bootstrap', get_template_directory_uri() . '/dist/css/vendor/bootstrap/bootstrap.min.css', array(), '3.3.7', 'all');
+    wp_enqueue_style('font-awesome', get_template_directory_uri() . '/dist/css/vendor-overrides/font-awesome/font-awesome.css', array(), '4.5.0', 'all');
+    wp_enqueue_style("custom style", get_template_directory_uri() . "/dist/css/medica.css", array(), "1.0.0", "all");
 
     // Import the main js file
     wp_enqueue_script('jquery');
-    wp_enqueue_script('bootstrapjs', get_template_directory_uri() . '/js/vendor/bootstrap/bootstrap.min.js', array(), '3.3.4', true);
-    wp_enqueue_script("custom js", get_template_directory_uri() . "/js/medica.js", array(), "1.0.0", true);
+    wp_enqueue_script('bootstrapjs', get_template_directory_uri() . '/dist/js/vendor/bootstrap/bootstrap.min.js', array(), '3.3.7', true);
+    wp_enqueue_script("custom js", get_template_directory_uri() . "/dist/js/medica.js", array(), "1.0.0", true);
 
 }
 

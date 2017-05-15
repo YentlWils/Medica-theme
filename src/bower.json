@@ -1,0 +1,50 @@
+{
+  "name": "Medica",
+  "description": "Automates the front-end dependencies for the Medica Theme project",
+  "authors": [
+    "Yentl Wils"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "node_modules",
+    "bower_components"
+  ],
+  "dependencies": {
+    "components-font-awesome": "*",
+    "lodash": "^4.0.0",
+    "jquery": "^3.2.1",
+    "bootstrap": "^3.3.7"
+  },
+  "install": {
+    "path": {
+      "css": "css/vendor",
+      "less": "scss/vendor",
+      "sass": "scss/vendor",
+      "scss": "scss/vendor",
+      "js": "js/vendor",
+      "eot": "fonts/vendor",
+      "svg": "fonts/vendor",
+      "ttf": "fonts/vendor",
+      "woff": "fonts/vendor",
+      "woff2": "fonts/vendor",
+      "otf": "fonts/vendor"
+    },
+    "sources": {
+      "jquery": [
+        "bower_components/jquery/dist/jquery.min.js"
+      ],
+      "components-font-awesome": [
+        "bower_components/components-font-awesome/scss/_*",
+        "bower_components/components-font-awesome/fonts/*"
+      ],
+      "bootstrap": [
+        "bower_components/bootstrap/dist/css/bootstrap.min.css",
+        "bower_components/bootstrap/dist/js/bootstrap.min.js",
+        "bower_components/bootstrap/dist/fonts/*"
+      ],
+      "lodash": [
+        "bower_components/lodash/dist/lodash.min.js"
+      ]
+    }
+  }
+}

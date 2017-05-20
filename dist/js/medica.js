@@ -1,2 +1,2 @@
-
+var $=jQuery;$(document).ready(function(){function e(){var e=window.pageYOffset;0<e?t.add():0==e&&t.remove()}var t={flagAdd:!0,elements:[],init:function(e){this.elements=e},add:function(){if(this.flagAdd){for(var e=0;e<this.elements.length;e++)document.getElementById(this.elements[e]).className+=" fixed-theme";this.flagAdd=!1}},remove:function(){for(var e=0;e<this.elements.length;e++)document.getElementById(this.elements[e]).className=document.getElementById(this.elements[e]).className.replace(/(?:^|\s)fixed-theme(?!\S)/g,"");this.flagAdd=!0}};t.init(["header","header-container","brand"]),window.onscroll=function(t){e()},e()});
 //# sourceMappingURL=medica.js.map

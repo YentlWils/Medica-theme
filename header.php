@@ -21,34 +21,45 @@
 
     <body <?php body_class($medica_home); ?> >
 
-
-
         <!-- Fixed navbar -->
         <nav id="header" class="navbar navbar-fixed-top">
             <div id="header-container" class="container navbar-container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a id="brand" class="navbar-brand" href="#">
-                        <?php the_custom_logo(); ?>
-                    </a>
+                <div class="navbar-header col-xs-12">
+                    <div class="row">
+                        <a id="brand" class="navbar-brand" href="#">
+                            Logo
+                            <?php the_custom_logo(); ?>
+                        </a>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li>
+                                <a href="#" class="navbar-link">
+                                    <span>English</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a id="nav-menu" href="#menu" class="navbar-link menu__button">
+                                    <span class="text">Menu</span>
+                                    <span class="line line--one"></span>
+                                    <span class="line line--two"></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-                <div id="navbar" class="collapse navbar-collapse">
-                    <ul class="nav navbar-nav">
-                        <li class="active"><a href="#">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </div><!-- /.nav-collapse -->
+<!--                <div id="navbar" class="collapsed navbar-collapse hidden">-->
+<!--                    <ul class="nav navbar-nav">-->
+<!--                        <li class="active"><a href="#">Home</a></li>-->
+<!--                        <li><a href="#about">About</a></li>-->
+<!--                        <li><a href="#contact">Contact</a></li>-->
+<!--                    </ul>-->
+<!--                </div>-->
+                <!-- /.nav-collapse -->
+
             </div><!-- /.container -->
         </nav><!-- /.navbar -->
 
-    <?php wp_nav_menu( array('theme_location' => 'primary') ); ?>
+<!--    --><?php //wp_nav_menu( array('theme_location' => 'primary') ); ?>
 
     <!-- Custom header image -->
-    <img scr="<?php header_image(); ?>" height="<?php echo get_custom_header()->height; ?>" width="<?php echo get_custom_header()->width; ?>" alt=""/>
+<!--    <img scr="--><?php //header_image(); ?><!--" height="--><?php //echo get_custom_header()->height; ?><!--" width="--><?php //echo get_custom_header()->width; ?><!--" alt=""/>-->
 

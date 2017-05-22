@@ -1,26 +1,32 @@
 /*
  * Navigation header
  */
-.navbar-brand {
-    font-size: 24px;
-}
+.navbar{
+    &-brand {
+        font-size: 24px;
 
-.navbar-container {
-    padding: 20px 0 20px 0;
-}
+        &.fixed-theme {
+            font-size: 18px;
+        }
+    }
 
-.navbar.navbar-fixed-top.fixed-theme {
-    background-color: #222;
-    border-color: #080808;
-    box-shadow: 0 0 5px rgba(0,0,0,.8);
-}
+    &-container {
+        padding: 20px 0 20px 0;
 
-.navbar-brand.fixed-theme {
-    font-size: 18px;
-}
+        &.fixed-theme {
+            padding: 0;
+        }
+    }
 
-.navbar-container.fixed-theme {
-    padding: 0;
+    &-fixed-top{
+        background-color: $header-background;
+
+        &.fixed-theme {
+            background-color: $default-background;
+            border-color: #080808;
+            box-shadow: 0 0 5px rgba(0,0,0,.8);
+        }
+    }
 }
 
 .navbar-brand.fixed-theme,

@@ -1,9 +1,11 @@
 html,
 body {
+    font-family: $font-family;
+    background-color: $default-background;
     overflow-x: hidden; /* Prevent scroll on narrow devices */
 }
 body {
-    padding-top: 100px;
+    //padding-top: 100px;
 }
 footer {
     padding: 30px 0;

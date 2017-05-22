@@ -8,6 +8,10 @@ get_header();
 
 ?>
 
+<div class="carousel" style="height: 550px; background-color: red">
+
+</div>
+
 <div class="well">
     <?php
 

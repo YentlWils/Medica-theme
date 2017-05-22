@@ -1,0 +1,45 @@
+.menu{
+    &__button{
+        position: relative;
+
+        .text{
+            transition: .25s ease-in-out;
+        }
+
+        .line{
+            display: block;
+            position: absolute;
+            height: 2px;
+            width: 100%;
+            background: #d3531a;
+            opacity: 1;
+            left: 0;
+            top: 36px;
+            transform: rotate(0deg);
+            transition: .25s ease-in-out;
+            transform-origin: left center;
+        }
+
+        &.open{
+            .text{
+                height: 0%;
+                //width: 0%;
+                opacity: 0;
+            }
+
+            .line{
+                &--one {
+                    transform: rotate(45deg);
+                    top: -3px;
+                    left: 8px;
+                }
+
+                &--two {
+                    transform: rotate(-45deg);
+                    top: 43px;
+                    left: 8px;
+                }
+            }
+        }
+    }
+}

@@ -24,13 +24,12 @@
         <!-- Fixed navbar -->
         <nav id="header" class="navbar navbar-fixed-top">
             <div id="header-container" class="container navbar-container">
-                <div class="navbar-header col-xs-12">
-                    <div class="row">
+                <div class="row">
+                    <div class="navbar-header col-xs-12">
                         <a id="brand" class="navbar-brand" href="#">
-                            Logo
                             <?php the_custom_logo(); ?>
                         </a>
-                        <ul class="nav navbar-nav navbar-right">
+                        <ul id="main-navigation" class="nav navbar-nav navbar-right">
                             <li>
                                 <a href="#" class="navbar-link">
                                     <span>English</span>
@@ -38,7 +37,7 @@
                             </li>
                             <li>
                                 <a id="nav-menu" href="#menu" class="navbar-link menu__button">
-                                    <span class="text">Menu</span>
+                                    <span class="text">menu</span>
                                     <span class="line line--one"></span>
                                     <span class="line line--two"></span>
                                 </a>

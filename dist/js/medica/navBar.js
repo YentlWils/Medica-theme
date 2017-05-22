@@ -5,6 +5,8 @@ $(document).ready(function () {
 
     flagAdd: true,
 
+    scrollingClass: "scrolling-class",
+
     elements: [],
 
     init: function init(elements) {
@@ -14,7 +16,7 @@ $(document).ready(function () {
     add: function add() {
       if (this.flagAdd) {
         for (var i = 0; i < this.elements.length; i++) {
-          document.getElementById(this.elements[i]).className += " fixed-theme";
+          document.getElementById(this.elements[i]).className += " " + this.scrollingClass;
         }
         this.flagAdd = false;
       }
@@ -22,14 +24,15 @@ $(document).ready(function () {
 
     remove: function remove() {
       for (var i = 0; i < this.elements.length; i++) {
-        document.getElementById(this.elements[i]).className = document.getElementById(this.elements[i]).className.replace(/(?:^|\s)fixed-theme(?!\S)/g, '');
+        var regex = new RegExp("(?:^|\\s)" + this.scrollingClass + "(?!\\S)");
+        document.getElementById(this.elements[i]).className = document.getElementById(this.elements[i]).className.replace(regex, '');
       }
       this.flagAdd = true;
     }
 
   };
 
-  myNavBar.init(["header", "header-container", "brand"]);
+  myNavBar.init(["header", "header-container", "brand", "main-navigation"]);
 
   function offSetManager() {
 

@@ -1,0 +1,40 @@
+.navbar{
+
+    &-nav{
+        &.scrolling-class{
+            .navbar-link{
+                color: $highlight;
+            }
+
+            .line{
+                background-color: $highlight;
+            }
+        }
+    }
+
+    &-link{
+        font-size: 1.3em;
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+        text-decoration: none;
+        transition: .25s ease-in-out;
+    }
+
+    &-link{
+        color: white;
+        opacity: 0.4;
+
+
+
+        &:hover, &:active, &:focus{
+            background-color: transparent !important;
+            color: white;
+            opacity: 1;
+        }
+    }
+
+}
+
+.custom-logo-link img{
+    height: 50px !important;
+}

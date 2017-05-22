@@ -1,4 +1,21 @@
 .navbar{
+    transition: .25s ease-in-out;
+
+    &.menu-open{
+        background-color: $menu-background;
+
+        .navbar-nav{
+            &.scrolling-class{
+                .navbar-link{
+                    color: white;
+                }
+
+                .line{
+                    background-color: white;
+                }
+            }
+        }
+    }
 
     &-nav{
         &.scrolling-class{

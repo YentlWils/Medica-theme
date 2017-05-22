@@ -31,7 +31,9 @@ add_action( 'wp_enqueue_scripts', 'medica_scrip_enqueue' );
 function medica_theme_setup(){
     add_theme_support('menus');
 
-    register_nav_menu('primary', 'The primary header navigation');
+    register_nav_menu('primary-col-1', 'Menu navigation: left column');
+    register_nav_menu('primary-col-2', 'Menu navigation: middle column');
+    register_nav_menu('primary-col-3', 'Menu navigation: right column');
 
     register_nav_menu('secondary', 'The secondary footer navigation');
 }

@@ -2,7 +2,8 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>Medica Theme</title>
+        <!-- TODO: i18n -->
+        <title>Medica | <?php echo get_the_title(); ?></title>
 
         <!-- Import the css style files -->
         <?php wp_head(); ?>
@@ -32,11 +33,13 @@
                         <ul id="main-navigation" class="nav navbar-nav navbar-right">
                             <li>
                                 <a href="#" class="navbar-link">
+                                    <!-- TODO: i18n -->
                                     <span>English</span>
                                 </a>
                             </li>
                             <li>
-                                <a id="nav-menu" href="#menu" class="navbar-link menu__button">
+                                <a id="nav-menu" href="#menu" class="navbar-link menu__button" data-toggle="collapse" data-target="#main-menu">
+                                    <!-- TODO: i18n -->
                                     <span class="text">menu</span>
                                     <span class="line line--one"></span>
                                     <span class="line line--two"></span>
@@ -55,9 +58,23 @@
                 <!-- /.nav-collapse -->
 
             </div><!-- /.container -->
+            <div class="menu collapse" id="main-menu">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <?php wp_nav_menu( array('theme_location' => 'primary-col-1') ); ?>
+                        </div>
+                        <div class="col-md-4">
+                            <?php wp_nav_menu( array('theme_location' => 'primary-col-2') ); ?>
+                        </div>
+                        <div class="col-md-4">
+                            <?php wp_nav_menu( array('theme_location' => 'primary-col-3') ); ?>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </nav><!-- /.navbar -->
 
-<!--    --><?php //wp_nav_menu( array('theme_location' => 'primary') ); ?>
 
     <!-- Custom header image -->
 <!--    <img scr="--><?php //header_image(); ?><!--" height="--><?php //echo get_custom_header()->height; ?><!--" width="--><?php //echo get_custom_header()->width; ?><!--" alt=""/>-->

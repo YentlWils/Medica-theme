@@ -2,8 +2,18 @@
 <html>
     <head>
         <meta charset="utf-8">
+        <!-- Chrome & Firefox OS -->
+        <meta name="theme-color" content="#94335c">
+        <!-- Windows Phone -->
+        <meta name="msapplication-navbutton-color" content="#94335c">
+        <!-- iOS Safari -->
+        <meta name="apple-mobile-web-app-status-bar-style" content="#94335c">
+
         <!-- TODO: i18n -->
         <title>Medica | <?php echo get_the_title(); ?></title>
+
+        <link href="<?php echo get_stylesheet_directory_uri(); ?>/dist/images/assets/favicon.ico" rel="shortcut icon" type="image/x-icon">
+        <link href="<?php echo get_stylesheet_directory_uri(); ?>/dist/images/assets/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180">
 
         <!-- Import the css style files -->
         <?php wp_head(); ?>
@@ -26,11 +36,11 @@
         <nav id="header" class="navbar navbar-fixed-top">
             <div id="header-container" class="container navbar-container">
                 <div class="row">
-                    <div class="navbar-header col-xs-12">
+                    <div id="main-navigation" class="navbar-header col-xs-12">
                         <a id="brand" class="navbar-brand" href="#">
-                            <?php the_custom_logo(); ?>
+                            <?php include "logo/logo.php" ?>
                         </a>
-                        <ul id="main-navigation" class="nav navbar-nav navbar-right">
+                        <ul class="nav navbar-nav navbar-right">
                             <li>
                                 <a href="#" class="navbar-link">
                                     <!-- TODO: i18n -->

@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" height="25px" viewBox="0 0 524 96.5" class="medica-logo">
+<svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 0 524 96.5" class="medica-logo">
     <defs>
         <style>
             .font-style {

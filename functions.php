@@ -35,6 +35,10 @@ function medica_theme_setup(){
     register_nav_menu('primary-col-2', 'Menu navigation: middle column');
     register_nav_menu('primary-col-3', 'Menu navigation: right column');
 
+    register_nav_menu( 'social-media', 'Social Media');
+
+
+
     register_nav_menu('secondary', 'The secondary footer navigation');
 }
 

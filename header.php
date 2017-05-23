@@ -60,15 +60,42 @@
             </div>
             <div class="main-menu collapse" id="main-menu">
                 <div class="container">
-                    <div class="row">
-                        <div class="col-md-4">
-                            <?php wp_nav_menu( array('theme_location' => 'primary-col-1') ); ?>
+                    <div class="row text-center">
+                            <img class="main-menu__shield" src="<?php echo get_stylesheet_directory_uri(); ?>/dist/images/assets/medica-shield.svg"/>
+                    </div>
+                </div>
+                <div class="main-menu__primary">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-4 col-md-offset-1">
+                                <?php wp_nav_menu( array('theme_location' => 'primary-col-1') ); ?>
+                            </div>
+                            <div class="col-md-4">
+                                <?php wp_nav_menu( array('theme_location' => 'primary-col-2') ); ?>
+                            </div>
+                            <div class="col-md-3">
+                                <?php wp_nav_menu( array('theme_location' => 'primary-col-3') ); ?>
+                            </div>
                         </div>
-                        <div class="col-md-4">
-                            <?php wp_nav_menu( array('theme_location' => 'primary-col-2') ); ?>
-                        </div>
-                        <div class="col-md-4">
-                            <?php wp_nav_menu( array('theme_location' => 'primary-col-3') ); ?>
+                    </div>
+                </div>
+                <div class="main-menu__social">
+                    <div class="container">
+                        <div class="row text-center">
+                            <?php if ( has_nav_menu( 'social-media' ) ) {
+
+                                wp_nav_menu(
+                                    array(
+                                        'theme_location'  => 'social-media',
+                                        'container'       => 'nav',
+                                        'container_id'    => 'menu-social-media',
+                                        'container_class' => 'menu',
+                                        'menu_id'         => 'menu-social-media-items',
+                                        'menu_class'      => 'menu-items',
+                                        'depth'           => 1
+                                    )
+                                );
+                            } ?>
                         </div>
                     </div>
                 </div>

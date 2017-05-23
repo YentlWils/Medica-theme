@@ -4,6 +4,7 @@
 .navbar{
     transition: .25s ease-in-out;
 
+    //Menu open state
     &--menu-open{
         background-color: $menu-background !important;
 
@@ -25,6 +26,7 @@
             }
         }
     }
+
 
     &-header{
         &.scrolling-class{

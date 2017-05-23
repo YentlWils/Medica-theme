@@ -1,0 +1,31 @@
+.main-menu{
+    ul{
+        list-style-type: none;
+        &.menu{
+            text-transform: capitalize;
+            li{
+                a{
+                    font-weight: 500;
+                    font-size: 1.5em;
+                }
+            }
+        }
+
+        &.sub-menu{
+            text-transform: lowercase;
+            li{
+                a{
+                    font-size: 1.2em;
+                    font-weight: 100;
+                }
+            }
+        }
+
+        li{
+          a{
+              color: white;
+              line-height: 2em;
+          }
+        }
+    }
+}

@@ -58,7 +58,7 @@
                     </div>
                 </div>
             </div>
-            <div class="menu collapse" id="main-menu">
+            <div class="main-menu collapse" id="main-menu">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-4">

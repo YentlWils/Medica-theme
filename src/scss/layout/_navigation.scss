@@ -2,11 +2,45 @@
  * Navigation header
  */
 .navbar{
-    &-brand {
-        font-size: 24px;
+    transition: .25s ease-in-out;
 
-        &.scrolling-class {
-            font-size: 18px;
+    &--menu-open{
+        background-color: $menu-background !important;
+
+        .navbar-header{
+            &.scrolling-class{
+                .navbar-link{
+                    color: white;
+                }
+
+                .medica-logo{
+                    .font-style{
+                        fill: white;
+                    }
+                }
+
+                .line{
+                    background-color: white;
+                }
+            }
+        }
+    }
+
+    &-header{
+        &.scrolling-class{
+            .navbar-link{
+                color: $highlight;
+            }
+
+            .medica-logo{
+                .font-style{
+                    fill: $highlight;
+                }
+            }
+
+            .line{
+                background-color: $highlight;
+            }
         }
     }
 
@@ -15,6 +49,37 @@
 
         &.scrolling-class {
             padding: 10px 0;
+        }
+    }
+
+    &-brand {
+        font-size: 24px;
+
+        &.scrolling-class {
+            font-size: 18px;
+        }
+
+        .medica-logo{
+            .font-style{
+                fill: white;
+                transition: .25s ease-in-out;
+            }
+        }
+    }
+
+    &-link{
+        color: white;
+        opacity: 0.4;
+        font-size: 1.3em;
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+        text-decoration: none;
+        transition: .25s ease-in-out;
+
+        &:hover, &:active, &:focus{
+            background-color: transparent !important;
+            color: white;
+            opacity: 1;
         }
     }
 

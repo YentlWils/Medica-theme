@@ -31,7 +31,6 @@
     ?>
 
     <body <?php body_class($medica_home); ?> >
-
         <!-- Fixed navbar -->
         <nav id="header" class="navbar navbar-fixed-top">
             <div id="header-container" class="container navbar-container">
@@ -58,16 +57,7 @@
                         </ul>
                     </div>
                 </div>
-<!--                <div id="navbar" class="collapsed navbar-collapse hidden">-->
-<!--                    <ul class="nav navbar-nav">-->
-<!--                        <li class="active"><a href="#">Home</a></li>-->
-<!--                        <li><a href="#about">About</a></li>-->
-<!--                        <li><a href="#contact">Contact</a></li>-->
-<!--                    </ul>-->
-<!--                </div>-->
-                <!-- /.nav-collapse -->
-
-            </div><!-- /.container -->
+            </div>
             <div class="menu collapse" id="main-menu">
                 <div class="container">
                     <div class="row">

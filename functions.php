@@ -116,21 +116,22 @@ add_filter('show_admin_bar', '__return_false');
 function medica_custom_post_type(){
 
     $labels = array(
-        "name" => "Portfolio",
-        "singular_name" => "admin portfolio",
-        "add_new" => "add portfolio item",
-        "all_items" => "All items",
-        "add_new_item" => "add new item",
-        "edit_item" => "Edit item",
-        "new_item" => "New item",
-        "view_item" => "View item",
-        "search_item" => "Search portfolio",
+        "name" => "Highlight Post",
+        "singular_name" => "admin highlight post",
+        "add_new" => "add highlight post",
+        "all_items" => "All highlight posts",
+        "add_new_item" => "add highlight post",
+        "edit_item" => "Edit highlight post",
+        "new_item" => "New highlight post",
+        "view_item" => "View highlight post",
+        "search_item" => "Search highlight post",
         "not_found" => "No items found",
         "not_found_in_trash" => "No items found in trash",
         "parent_item_colon" => "Parent item"
     );
     
     $args = array(
+        'label' => 'Highlight Post',
         "labels" => $labels,
         "public" => true,
         "has_archive" => true,
@@ -150,6 +151,7 @@ function medica_custom_post_type(){
             "category",
             "post_tag"
         ),
+        "menu_icon" => "dashicons-lightbulb",
         "menu_position" => 5,
         "exclude_search" => false
     );

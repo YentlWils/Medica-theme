@@ -36,7 +36,7 @@
             <div id="header-container" class="container navbar-container">
                 <div class="row">
                     <div id="main-navigation" class="navbar-header col-xs-12">
-                        <a id="brand" class="navbar-brand" href="#">
+                        <a id="brand" class="navbar-brand" href="<?php echo get_home_url(); ?>">
                             <?php include "logo/logo.php" ?>
                         </a>
                         <ul class="nav navbar-nav navbar-right">

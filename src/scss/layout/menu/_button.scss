@@ -1,7 +1,9 @@
 .menu{
+
     &__button{
         position: relative !important;
         opacity: 1 !important;
+        border: none;
 
         &:hover{
             .line{

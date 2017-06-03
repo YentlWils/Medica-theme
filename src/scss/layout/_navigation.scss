@@ -49,6 +49,8 @@
     &-container {
         padding: 30px 0 30px 0;
 
+
+
         &.scrolling-class {
             padding: 10px 0;
         }
@@ -56,6 +58,7 @@
 
     &-brand {
         font-size: 24px;
+        border: none;
 
         &.scrolling-class {
             font-size: 18px;
@@ -77,6 +80,7 @@
         padding-right: 20px !important;
         text-decoration: none;
         transition: .25s ease-in-out;
+        border: none;
 
         &:hover, &:active, &:focus{
             background-color: transparent !important;

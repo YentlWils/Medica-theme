@@ -1,4 +1,11 @@
 .main-menu{
+    a{
+        border: none;
+        &:hover{
+            border-bottom: 1px solid white;
+        }
+    }
+
     &__shield{
         height: 130px;
         margin-bottom: 50px;

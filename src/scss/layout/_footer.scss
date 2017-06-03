@@ -1,8 +1,37 @@
 .footer{
     background-color: $footer-background;
+    color: $footer-color;
     padding: 40px 0;
 
     &__shield{
         height: 130px;
+    }
+
+    &__banner{
+        max-width: 100%;
+    }
+
+    &__author{
+        width: 80px;
+
+        &-link{
+            border: none;
+        }
+    }
+
+    a{
+        color: $footer-color;
+        border-color: $footer-color;
+
+        &:hover{
+            color: $text;
+            border-color: $text;
+        }
+    }
+
+    p{
+        color: $footer-color;
+        line-height: 1em;
+        font-size: 1em;
     }
 }

@@ -13,7 +13,8 @@
     "components-font-awesome": "*",
     "lodash": "^4.0.0",
     "jquery": "^3.2.1",
-    "bootstrap": "^3.3.7"
+    "bootstrap": "^3.3.7",
+    "owl.carousel" : "^2.2.1"
   },
   "install": {
     "path": {
@@ -30,6 +31,11 @@
       "otf": "fonts/vendor"
     },
     "sources": {
+      "owl.carousel": [
+        "bower_components/owl.carousel/dist/owl.carousel.min.js",
+        "bower_components/owl.carousel/dist/assets/owl.carousel.min.css",
+        "bower_components/owl.carousel/dist/assets/owl.theme.default.min.css"
+      ],
       "jquery": [
         "bower_components/jquery/dist/jquery.min.js"
       ],

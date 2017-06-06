@@ -1,4 +1,4 @@
-@import 'https://fonts.googleapis.com/css?family=Roboto:300,400,300italic,400italic,700,700italic';
+//@import 'https://fonts.googleapis.com/css?family=Roboto:300,400,300italic,400italic,700,700italic';
 
 // Settings
 @import "settings/colors";
@@ -10,8 +10,11 @@
 @import "layout/footer";
 
 // Menu CSS
-@import "layout/menu/button";
 @import "layout/menu/menu";
+@import "layout/menu/button";
+
+// Header CSS
+@import "layout/header/carousel";
 
 // Page CSS
 // ----- CONTENT PAGE

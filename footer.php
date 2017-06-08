@@ -2,7 +2,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-2 text-center">
-                    <img class="footer__shield" src="<?php echo get_stylesheet_directory_uri(); ?>/dist/images/assets/medica-shield.svg"/>
+                    <img class="footer__shield" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/dist/images/assets/medica-shield.svg"/>
                 </div>
                 <div class="col-md-2 text-left">
                     <address>
@@ -12,7 +12,7 @@
                     <a href="mailto:<?php echo get_option('medica_email'); ?>"><?php echo get_option('medica_email'); ?></a>
                 </div>
                 <div class="col-md-4 text-center">
-                    <img class="footer__banner" src="<?php echo get_stylesheet_directory_uri(); ?>/dist/images/assets/ad.png"/>
+                    <img class="footer__banner" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/dist/images/assets/ad.png"/>
                 </div>
                 <div class="col-md-2 text-left">
                     <p>Ook adverteren?</p>
@@ -26,7 +26,7 @@
                     <br/>
                     <br/>
                     <a class="footer__author-link" href="http://designblast.be" target="_blank">
-                        <img class="footer__author" src="<?php echo get_stylesheet_directory_uri(); ?>/dist/images/assets/designblast.png"/>
+                        <img class="footer__author" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/dist/images/assets/designblast.png"/>
                     </a>
                 </div>
             </div>

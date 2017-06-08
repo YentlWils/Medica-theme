@@ -1,5 +1,5 @@
 *.iml
-src/npm-debug.log
-src/node_modules/*
-src/bower_components/*
+assets/src/npm-debug.log
+assets/src/node_modules/*
+assets/src/bower_components/*
 .idea/*

@@ -1,0 +1,25 @@
+.sponsor-widget{
+
+    padding: 3.5em 0;
+
+    &__link{
+        display: inline-block;
+        border: none;
+    }
+
+    &__img{
+        max-width: 100%;
+        filter: grayscale(100%);
+        opacity: 0.5;
+        transition: all 0.25s ease-in-out;
+
+        // Todo Remove width
+        width: 60px;
+
+        &:hover{
+            opacity: 1;
+            filter: grayscale(0%);
+        }
+    }
+
+}

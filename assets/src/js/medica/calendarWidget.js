@@ -7,7 +7,7 @@ $(document).ready(function(){
     // Hover in
     function(e) {
       // Todo bug when slide over title
-      let element = $(e.srcElement);
+      let element = $(e.currentTarget);
       let backgroundImg = element.attr('data-bg-img');
 
       $(calendarRow).css("background-image", "url(" + backgroundImg + ")");
@@ -16,7 +16,7 @@ $(document).ready(function(){
     // Hover out
     function(e) {
 
-      //$(calendarRow).css("background-image", "none");
+      $(calendarRow).removeAttr("style");
 
     }
   );

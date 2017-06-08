@@ -1,4 +1,8 @@
+    <!-- Calendar preview -->
     <?php include "footer/calendar-widget.php" ?>
+
+    <!-- Sponsors -->
+    <?php include "footer/sponsor-widget.php" ?>
 
     <footer class="footer">
         <div class="container">

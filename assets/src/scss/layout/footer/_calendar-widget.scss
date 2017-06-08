@@ -1,9 +1,15 @@
 .calendar-widget{
-    background-color: $delta-color;
 
     padding: 50px 20px;
-
     display: table;
+    background-color: $transparent-delta-color;
+
+
+    &__row{
+        background-color: $delta-color;
+        transition: background-image 0.2s ease-in-out;
+        background-size: cover;
+    }
 
     &__header{
         display: table-cell;

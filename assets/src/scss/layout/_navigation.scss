@@ -31,17 +31,17 @@
     &-header{
         &.scrolling-class{
             .navbar-link{
-                color: $highlight;
+                color: $beta-color;
             }
 
             .medica-logo{
                 .font-style{
-                    fill: $highlight;
+                    fill: $beta-color;
                 }
             }
 
             .line{
-                background-color: $highlight;
+                background-color: $beta-color;
             }
         }
     }
@@ -93,7 +93,7 @@
         background-color: transparent;
 
         &.scrolling-class {
-            background-color: $header-background;
+            background-color: $delta-color;
             box-shadow: 1px 1px 1px rgba(0,0,0,.1);
         }
     }

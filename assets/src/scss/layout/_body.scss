@@ -9,18 +9,18 @@ body {
 }
 
 p{
-    color: $text;
+    color: $alpha-color;
     line-height: 1.8em;
     font-size: 1.1em;
     font-weight: 100;
 }
 
 a{
-    color: $link-color;
+    color: $beta-color;
     font-weight: 100;
     text-decoration: none;
     padding-bottom: 3px;
-    border-bottom: 1px solid $link-color;
+    border-bottom: 1px solid $beta-color;
     transition: .25s ease-in-out;
 
     &:hover{

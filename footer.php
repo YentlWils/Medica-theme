@@ -1,3 +1,5 @@
+    <?php include "footer/calendar-widget.php" ?>
+
     <footer class="footer">
         <div class="container">
             <div class="row">

@@ -7,7 +7,7 @@
         &:before{
             content: "";
             display: block;
-            background: $highlight;
+            background: $beta-color;
             position: absolute;
             height: 0px;
             z-index: 9;
@@ -191,7 +191,7 @@
     }
 
     100% {
-        color: $link-color;
+        color: $beta-color;
         background-position:left bottom;
     }
 }

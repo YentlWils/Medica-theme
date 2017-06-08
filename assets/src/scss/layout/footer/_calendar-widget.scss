@@ -1,0 +1,64 @@
+.calendar-widget{
+    background-color: $delta-color;
+
+    padding: 50px 20px;
+
+    display: table;
+
+    &__header{
+        display: table-cell;
+        vertical-align: top;
+    }
+
+    &__body{
+        display: table-cell;
+        vertical-align: top;
+        padding-left: 10px;
+    }
+
+    &__day{
+        color: $light-alpha-color;
+        display: inline-block;
+        font-size: 2em;
+
+        line-height: 1em;
+
+        span{
+            display: block;
+
+            &.month{
+                margin-top: 5px;
+                font-size: .6em;
+                line-height: .6em;
+            }
+        }
+    }
+
+    &__title{
+        color: $beta-color;
+        font-size: 1.4em;
+        line-height: 1.3em;
+        font-weight: 500;
+        min-height: 50px;
+        margin-bottom: 20px;
+    }
+
+    &__location{
+        color: $beta-color;
+        font-weight: 500;
+
+        span{
+            &:before{
+                content: "|";
+                margin-left: 10px;
+                margin-right: 10px;
+            }
+        }
+    }
+
+    &__date{
+        color: $dark-alpha-color;
+        margin-bottom: 20px;
+    }
+
+}

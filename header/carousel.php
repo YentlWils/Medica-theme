@@ -10,7 +10,7 @@
 
 <div class="medica-carousel">
     <div class="medica-carousel__holder owl-carousel">
-        <div class="medica-carousel__item medica-carousel__item--filter" style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>/dist/images/assets/temp/ski.png')">
+        <div class="medica-carousel__item medica-carousel__item--filter" style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>/assets/dist/images/assets/temp/ski.png')">
             <div class="container">
                 <div class="row">
                     <div class="col-sm-12 col-md-8 col-lg-6 col-centered text-center">
@@ -23,7 +23,7 @@
             </div>
         </div>
 
-        <div class="medica-carousel__item medica-carousel__item--filter" style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>/dist/images/assets/temp/feest.png')">
+        <div class="medica-carousel__item medica-carousel__item--filter" style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>/assets/dist/images/assets/temp/feest.png')">
             <div class="container">
                 <div class="row">
                     <div class="col-sm-12 col-md-8 col-lg-6 col-centered text-center">
@@ -36,7 +36,7 @@
             </div>
         </div>
 
-        <div class="medica-carousel__item medica-carousel__item--filter" style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>/dist/images/assets/temp/cantus.png')">
+        <div class="medica-carousel__item medica-carousel__item--filter" style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>/assets/dist/images/assets/temp/cantus.png')">
             <div class="container">
                 <div class="row">
                     <div class="col-sm-12 col-md-8 col-lg-6 col-centered text-center">

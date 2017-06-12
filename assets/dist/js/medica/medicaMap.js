@@ -1,10 +1,29 @@
 var $ = jQuery;
 
+var map = null;
+
+$(document).on('click', '.medica-map__poi:not(a)', function (e) {
+  var marker = $(this);
+  var markerId = marker.attr('data-marker');
+  var latLng = medicaMarkers[markerId];
+  var center = new google.maps.LatLng(latLng.lat, latLng.lng);
+
+  map.panTo(center);
+
+  var activeClass = "medica-map__poi--active";
+  $('.' + activeClass).removeClass(activeClass);
+  marker.addClass(activeClass);
+});
+
 function initMap() {
-  var uluru = { lat: -25.363, lng: 131.044 };
-  var map = new google.maps.Map(document.getElementById('map'), {
+  map = new google.maps.Map(document.getElementById('map'), {
     zoom: 4,
-    center: uluru,
+    scrollwheel: false,
+    maxZoom: 15,
+    navigationControl: false,
+    mapTypeControl: false,
+    scaleControl: false,
+    draggable: false,
     styles: [{
       "featureType": "all",
       "elementType": "labels.text.fill",
@@ -161,8 +180,43 @@ function initMap() {
       }]
     }]
   });
-  var marker = new google.maps.Marker({
-    position: uluru,
-    map: map
-  });
+
+  setMarkers();
+
+  function setMarkers() {
+
+    var image = {
+      url: '/wordpress/wp-content/themes/medica/assets/dist/images/assets/marker.png',
+
+      size: new google.maps.Size(22, 22),
+
+      origin: new google.maps.Point(0, 0),
+
+      anchor: new google.maps.Point(11, 11)
+    };
+
+    var shape = {
+      coords: [1, 1, 1, 20, 18, 20, 18, 1],
+      type: 'poly'
+    };
+
+    var bounds = new google.maps.LatLngBounds();
+
+    _.forEach(medicaMarkers, function (value, key) {
+      var marker = new google.maps.Marker({
+        position: { lat: value.lat, lng: value.lng },
+        map: map,
+        icon: image,
+        shape: shape,
+        title: key
+      });
+
+      var myLatLng = new google.maps.LatLng(value.lat, value.lng);
+      bounds.extend(myLatLng);
+    });
+
+    map.fitBounds(bounds);
+
+    map.setZoom(14);
+  }
 };

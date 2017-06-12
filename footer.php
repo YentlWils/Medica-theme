@@ -1,8 +1,11 @@
     <!-- Calendar preview -->
     <?php include "footer/calendar-widget.php" ?>
 
+    <!-- Quote -->
+    <?php include "footer/quote-widget.php" ?>
+
     <!-- Google maps -->
-    <div id="map"></div>
+    <?php include "footer/map-widget.php" ?>
 
     <!-- Sponsors -->
     <?php include "footer/sponsor-widget.php" ?>
@@ -43,11 +46,12 @@
 
     </footer>
 
+    <?php wp_footer(); ?>
+
     <!-- Import the js script files  -->
     <script async defer
             src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA-1X7ksUemJ0ajJHPWcI-xmmzHSt91b0M&callback=initMap">
     </script>
-    <?php wp_footer(); ?>
 
     </body>
 </html>

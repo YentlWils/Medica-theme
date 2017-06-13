@@ -6,7 +6,7 @@
                     <div class="shortcut-widget__image" style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>/assets/dist/images/assets/temp/cursusdienst.png')"></div>
                     <div class="shortcut-widget__table">
                         <div class="shortcut-widget__cell">
-                            curtusdienst
+                            cursusdienst
                         </div>
                     </div>
                 </div>

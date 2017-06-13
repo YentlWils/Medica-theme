@@ -4,7 +4,9 @@
     <!-- Social media section -->
     <div class="container">
         <div class="row">
-            <div class="col-md-6"></div>
+            <div class="col-md-6">
+<!--                --><?php //include "footer/facebook-widget.php" ?>
+            </div>
             <div class="col-md-6">
                 <?php include "footer/instagram-widget.php" ?>
             </div>

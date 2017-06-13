@@ -337,7 +337,7 @@ add_action("admin_init", "display_theme_panel_fields");
 /*
  * Development function for instagram curl
  */
-function rudr_instagram_api_curl_connect( $api_url ){
+function api_curl_connect( $api_url ){
     $connection_c = curl_init(); // initializing
     curl_setopt($connection_c, CURLOPT_SSL_VERIFYPEER, false);
 //    curl_setopt($connection_c, CURLOPT_SSL_VERIFYHOST, false);

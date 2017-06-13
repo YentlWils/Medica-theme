@@ -17,6 +17,9 @@
     <!-- Quote -->
     <?php include "footer/quote-widget.php" ?>
 
+    <!-- Shortcuts -->
+    <?php include "footer/shortcut-widget.php" ?>
+
     <!-- Google maps -->
     <?php include "footer/map-widget.php" ?>
 

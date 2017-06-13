@@ -1,0 +1,62 @@
+.shortcut-widget{
+    height: 130px;
+
+    color: $beta-color;
+    font-size: 1.5em;
+    font-weight: 600;
+
+    position: relative;
+    transition: all .25s ease-in-out;
+
+
+    &:hover{
+
+        color: white;
+
+        .shortcut-widget__image{
+            &:after{
+                content: "";
+                display: block;
+                background-color: $beta-color;
+
+                mix-blend-mode: multiply;
+            }
+        }
+    }
+
+
+    &__image{
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+
+        &:after{
+            transition: all .25s ease-in-out;
+            content: "";
+            display: block;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 1;
+        }
+
+    }
+
+    &__table{
+        display: table;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+
+    }
+
+    &__cell{
+        display: table-cell;
+        vertical-align: middle;
+    }
+}

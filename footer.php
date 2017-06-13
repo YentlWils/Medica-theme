@@ -4,10 +4,11 @@
     <!-- Social media section -->
     <div class="container">
         <div class="row">
-            <div class="col-md-6">
-<!--                --><?php //include "footer/facebook-widget.php" ?>
+            <div class="col-md-6 no-padding--right">
+                <?php include "footer/contact-widget.php" ?>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6 no-padding--left">
+                <?php include "footer/facebook-widget.php" ?>
                 <?php include "footer/instagram-widget.php" ?>
             </div>
         </div>

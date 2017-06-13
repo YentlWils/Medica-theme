@@ -23,13 +23,13 @@ $profileUrl = "https://www.instagram.com/" . $username;
 $iteration = 1;
 ?>
 
-<div class="instagram-widget">
+<div class="social-media-widget">
     <i class="fa fa-instagram"></i>
     <div class="row" style="margin: 0;">
         <?php
             foreach ($return->data as $post) {
             ?>
-                <div class="col-md-6 instagram-widget__image" style="background-image: url(<?php echo $post->images->low_resolution->url ?>)">
+                <div class="col-md-6 social-media-widget__item social-media-widget__item--image" style="background-image: url(<?php echo $post->images->low_resolution->url ?>)">
 
                 </div>
             <?php
@@ -38,12 +38,14 @@ $iteration = 1;
 
         ?>
     </div>
-    <div class="instagram-widget__link text-center">
-        <div class="instagram-widget__title text-uppercase">
-            Ontdek meer op onze instagram
-        </div>
-        <div class="instagram-widget__text">
-            <a href="<?php echo $profileUrl ?>">Ga naar onze instagram</a>
+    <div class="social-media-widget__overlay social-media-widget__overlay--instagram text-center">
+        <div class="social-media-widget__cell">
+            <div class="social-media-widget__title text-uppercase">
+                Ontdek meer op onze instagram
+            </div>
+            <div class="social-media-widget__link">
+                <a href="<?php echo $profileUrl ?>">Ga naar onze instagram</a>
+            </div>
         </div>
     </div>
 </div>

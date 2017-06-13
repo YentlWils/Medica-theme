@@ -1,0 +1,29 @@
+input{
+    color: $alpha-color;
+
+    &::placeholder{
+        color: lighten($alpha-color, 40);
+    }
+
+
+    &[type='submit'], button{
+        border-color: $beta-color;
+        background-color: $beta-color;
+        transition: all 0.25s ease-in-out;
+        color: white;
+
+        box-shadow: none;
+        border: none;
+
+        padding: 10px;
+
+        &:hover, &:focus{
+            background-color: lighten($beta-color, 10);
+        }
+
+        &:active{
+            background-color: darken($beta-color, 10);
+        }
+    }
+}
+

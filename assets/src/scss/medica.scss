@@ -21,8 +21,12 @@
 @import "layout/footer/sponsor-widget";
 @import "layout/footer/medica-map";
 @import "layout/footer/medica-quote";
-@import "layout/footer/instagram-widget";
+@import "layout/footer/social-media-widget";
+@import "layout/footer/contact-widget";
 
 // Page CSS
 // ----- CONTENT PAGE
 @import "layout/page/content-page";
+
+// Form CSS
+@import "layout/form/input-elements";

@@ -1,0 +1,78 @@
+.instagram-widget{
+    position: relative;
+    width: 100%;
+
+    &:hover{
+       .instagram-widget__link, .fa{
+           opacity: 1;
+       }
+    }
+
+    .fa{
+        position: absolute;
+        z-index: 9;
+        font-size: 1.4em;
+        top: 10px;
+        left: 10px;
+        color: white;
+        opacity: 0.5;
+        transition: all 0.25s ease-in-out;
+    }
+
+    &__image{
+        padding: 0px;
+        height: 160px;
+
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
+    &__title{
+        font-size: 1.2em;
+        font-weight: 500;
+        margin-bottom: 10px;
+    }
+
+    &__text{
+        a{
+            color: white;
+            border-color: white;
+        }
+    }
+
+    &__link{
+        transition: all 0.25s ease-in-out;
+        opacity: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        padding-top: 50px;
+        color: white;
+
+        /**
+            Instagram coloring
+         */
+        background:
+            /////// Use radial gradients to get the rounded
+            /////// gradient effect in each corner
+
+            // left bottom
+            radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%),
+            radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%),
+                // left top
+            radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%),
+            radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%),
+                //  right top
+            radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%),
+            radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%),
+                // right bottom
+            radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent),
+
+                /////// create a base coat to smooth
+                /////// corner gradients
+            linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
+
+    }
+}

@@ -18,15 +18,33 @@ $user_id = $user_search->data[0]->id; // or use string 'self' to get your own me
 
 $return = api_curl_connect("https://api.instagram.com/v1/users/" . $user_id . "/media/recent?access_token=" . $access_token);
 
-$profileUrl = "https://www.instagram.com/" + $username;
+$profileUrl = "https://www.instagram.com/" . $username;
 
 $iteration = 1;
-foreach ($return->data as $post) {
-    ?>
-    <img src="<?php echo $post->images->low_resolution->url ?>" class="col-md-6"/>
-    <?php
-    if ($iteration++ == 2) break;
-}
-
 ?>
+
+<div class="instagram-widget">
+    <i class="fa fa-instagram"></i>
+    <div class="row" style="margin: 0;">
+        <?php
+            foreach ($return->data as $post) {
+            ?>
+                <div class="col-md-6 instagram-widget__image" style="background-image: url(<?php echo $post->images->low_resolution->url ?>)">
+
+                </div>
+            <?php
+                if ($iteration++ == 2) break;
+            }
+
+        ?>
+    </div>
+    <div class="instagram-widget__link text-center">
+        <div class="instagram-widget__title text-uppercase">
+            Ontdek meer op onze instagram
+        </div>
+        <div class="instagram-widget__text">
+            <a href="<?php echo $profileUrl ?>">Ga naar onze instagram</a>
+        </div>
+    </div>
+</div>
 

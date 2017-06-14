@@ -1,0 +1,19 @@
+.medica-breadcrumb{
+    $breadcrumbColor : lighten($alpha-color, 30);
+
+    &__list{
+        margin-top: 20px;
+        li{
+            color: $breadcrumbColor;
+
+            a{
+                color: $breadcrumbColor;
+                border-color: $breadcrumbColor;
+            }
+
+            strong{
+                color: $breadcrumbColor;
+            }
+        }
+    }
+}

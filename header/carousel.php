@@ -5,10 +5,14 @@
  * Date: 8/06/17
  * Time: 07:29
  */
+    $carousel_modifier = "";
 
+    if( !is_front_page() ):
+        $carousel_modifier = "medica-carousel--condensed";
+    endif
 ?>
 
-<div class="medica-carousel">
+<div class="medica-carousel <?php echo $carousel_modifier ?>">
     <div class="medica-carousel__holder owl-carousel">
         <div class="medica-carousel__item medica-carousel__item--filter" style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>/assets/dist/images/assets/temp/ski.png')">
             <div class="container">

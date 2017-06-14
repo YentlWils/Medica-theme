@@ -67,6 +67,21 @@
         }
     }
 
+    &--condensed{
+        .medica-carousel{
+            &__item{
+                height: 480px;
+                padding-top: 140px;
+            }
+
+            &__holder{
+                .owl-dots{
+                    padding-top: 10%;
+                }
+            }
+        }
+    }
+
     &__item{
         background-position: center center;
         background-size: cover;

@@ -12,6 +12,7 @@
 // Menu CSS
 @import "layout/menu/menu";
 @import "layout/menu/button";
+@import "layout/menu/socials";
 
 // Header CSS
 @import "layout/header/carousel";
@@ -28,6 +29,8 @@
 // Page CSS
 // ----- CONTENT PAGE
 @import "layout/page/content-page";
+
+@import "layout/page/home-page";
 
 // Form CSS
 @import "layout/form/input-elements";

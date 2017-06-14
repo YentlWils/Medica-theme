@@ -22,15 +22,15 @@
 
     <?php
         if( is_front_page() ):
-            $medica_home = array("medica-home");
+            $medica_body_class = array("medica-home-page");
         elseif(is_home()):
-            $medica_home = array("medica-blog-page");
+            $medica_body_class = array("medica-blog-page");
         else:
-            $medica_home = array("medica-content-page");
+            $medica_body_class = array("medica-content-page");
         endif
     ?>
 
-    <body <?php body_class($medica_home); ?> >
+    <body <?php body_class($medica_body_class); ?> >
         <!-- Fixed navbar -->
         <nav id="header" class="navbar navbar-fixed-top">
             <div id="header-container" class="container navbar-container">
@@ -79,7 +79,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="main-menu__social">
+                <div class="main-menu__social social-buttons">
                     <div class="container">
                         <div class="row text-center">
                             <?php if ( has_nav_menu( 'social-media' ) ) {

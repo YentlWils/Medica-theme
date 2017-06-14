@@ -47,28 +47,5 @@
 
     &__social{
         margin-bottom: 50px;
-
-        ul{
-            li{
-                font-size: 1.8em;
-                color: $social-media-menu;
-                margin-right: 25px;
-                position: relative;
-                transition: .25s ease-in-out;
-
-                &:hover{
-                    color: white;
-                }
-
-                a{
-                    position: absolute;
-                    width: 26px;
-                    height: 26px;
-                    overflow: hidden;
-                    left: 0;
-                    text-indent: 9999;
-                }
-            }
-        }
     }
 }

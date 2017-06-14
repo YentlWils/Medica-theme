@@ -1,0 +1,59 @@
+.medica-home{
+    margin: 100px 180px 200px 180px;
+    padding: 50px 30px 100px 30px;
+    border: 1px solid lighten($alpha-color, 40);
+
+    position: relative;
+
+    &__title{
+        font-weight: 600;
+        position: absolute;
+
+        top: -40px;
+        left: -180px;
+        padding: 0 50px 50px 0;
+        background-color: white;
+    }
+
+    main{
+        margin-bottom: 0;
+        position: relative;
+        left: -100px;
+        background-color: white;
+        padding: 20px 0 50px 0;
+    }
+
+    &__socials{
+        position: absolute;
+        bottom: -25px;
+        left: 0px;
+
+        ul{
+            li{
+                margin-right: 20px;
+                color: lighten($alpha-color, 40);
+                &:before{
+                    padding: 0 5px;
+                    background-color: white;
+                }
+
+                &:hover{
+                    color: $alpha-color;
+                }
+            }
+        }
+    }
+
+    &__feature-img{
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+
+        right: 52px;
+        width: 350px;
+        height: 220px;
+        position: absolute;
+        bottom: -110px;
+
+    }
+}

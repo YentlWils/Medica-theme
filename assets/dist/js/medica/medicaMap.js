@@ -186,7 +186,7 @@ function initMap() {
   function setMarkers() {
 
     var image = {
-      url: '/wordpress/wp-content/themes/medica/assets/dist/images/assets/marker.png',
+      url: medicaMapIcon,
 
       size: new google.maps.Size(22, 22),
 

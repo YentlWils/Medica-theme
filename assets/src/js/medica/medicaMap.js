@@ -264,7 +264,7 @@ function initMap() {
   function setMarkers() {
 
     var image = {
-      url: '/wordpress/wp-content/themes/medica/assets/dist/images/assets/marker.png',
+      url: medicaMapIcon,
       // This marker is 20 pixels wide by 32 pixels high.
       size: new google.maps.Size(22, 22),
       // The origin for this image is (0, 0).

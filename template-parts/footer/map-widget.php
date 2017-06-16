@@ -13,7 +13,7 @@
         var medicaMapIcon = "<?php echo get_stylesheet_directory_uri(); ?>/assets/dist/images/assets/marker.png";
     </script>
     <div class="row">
-        <div class="col-md-12">
+        <div class="col-md-12 hidden-xs">
             <div id="map" class="medica-map__map"></div>
         </div>
     </div>

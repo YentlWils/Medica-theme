@@ -27,8 +27,9 @@ $iteration = 1;
     <div class="row" style="margin: 0;">
         <?php
             foreach ($return->data as $post) {
+                $extraClass = $iteration == 2 ? "hidden-xs" : "";
             ?>
-                <div class="col-sm-6 col-md-6 social-media-widget__item social-media-widget__item--image" style="background-image: url(<?php echo $post->images->low_resolution->url ?>)">
+                <div class="col-xs-12 col-sm-6 col-md-6 social-media-widget__item social-media-widget__item--image <?php echo $extraClass; ?>" style="background-image: url(<?php echo $post->images->low_resolution->url ?>)">
 
                 </div>
             <?php

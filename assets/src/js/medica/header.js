@@ -8,12 +8,20 @@ $(document).ready(function(){
   owl.owlCarousel({
     items:1,
     loop:true,
-    dots: true,
     autoplay:true,
     autoplayTimeout:10000,
     autoplayHoverPause: false,
     animateIn: 'fadeIn',
     animateOut: 'fadeOut',
+    responsive : {
+      // breakpoint from 768 up
+      0 : {
+        dots: false
+      },
+      768 : {
+        dots: true
+      }
+    },
     onInitialized: function(){
       $('.owl-item.active').addClass(slideActiveClass);
     }

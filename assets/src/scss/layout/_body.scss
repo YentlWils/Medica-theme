@@ -41,11 +41,15 @@ blockquote{
 
 .no-padding{
     &--left{
-        padding-left: 0;
+        @media (min-width: $screen-md-min) {
+            padding-left: 0;
+        }
     }
 
     &--right{
-        padding-right: 0;
+        @media (min-width: $screen-md-min) {
+            padding-right: 0;
+        }
     }
 }
 

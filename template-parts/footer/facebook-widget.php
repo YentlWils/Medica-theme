@@ -8,9 +8,11 @@
 
 //https://developers.facebook.com/tools/explorer/189072178288633?method=GET&path=TheFishHooks%2Fposts&version=v2.9
 
+//https://graph.facebook.com/oauth/access_token?grant_type=fb_exchange_token&client_id=189072178288633&client_secret=ea2a4a64a3411542388289b7bb366b16&fb_exchange_token=EAACr9cwGFZCkBAJcCo5Hv8lUrND28gsPZBujdsbAZB6U1DRvjr44r73VG2VNHpGZCh8g6Km0p1EnBCZCxV2SfwKvYvsZCZA3wkz9lbZAMreVr4aGD7M6ZCDKPeIpE8hp0LND817sLFG3PFgVYOV3YllqgZCm3a1JgwxXnIiwBXpp5p7f2weMU4D99VZA7DAxEFzVtilGX5s20yAtQZDZD&redirect_uri=medica.be
+
 $page_name = 'TheFishHooks'; // Example: http://facebook.com/{PAGE_NAME}
-$access_token = "EAACr9cwGFZCkBAGQxujpLxLymM9j1VZCS7Ec1TNQC4AvQh6G3GH38tQBzsnrFfwYEx5Qgu6x4ejZAVFawp8U5PXNznHoMHRrlmzyjIZBTlinDqLaoq4h33rrmQGOHpuGargDa0aEexOw4dbCsgOKFoTZBztyvjhj9mHqLg22jZCDTspZALw1pt8qjT8SkZCgzMsZD";
-$limit = 100;
+$access_token = "EAACr9cwGFZCkBAIsZAhZAjFcVRKkIPJKS4hZBGpsvNkONovAvajRCR9R4QrDJy1chE3VKZBku4iHTy2NOg5ZB0sHoDA6HJNgYPDZAyKLDMzGzC6vjmKpNm2BvuDGfCYZBJQWcLZC085xG53NeFUC9f3lEU9EKf06LN2d1pZABJ2ozZCWAZDZD";
+$limit = 10;
 $url = "https://graph.facebook.com/$page_name/posts?limit=$limit&access_token=$access_token";
 $profileUrl = "https://www.facebook.com/" . $page_name . "/";
 

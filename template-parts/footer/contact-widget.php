@@ -21,27 +21,28 @@
                 <div class="contact-widget__sub-title text-uppercase">wij brengen je op de hoogte</div>
                 <div class="contact-widget__form">
                     <div class="row contact-widget__form-row">
-                        <div class="col-md-6">
-                            <input type="text" class="col-md-12" name="name" placeholder="Naam"/>
+                        <div class="col-sm-6 col-md-6">
+                            <input type="text" class="col-sm-12 col-md-12" name="name" placeholder="Naam"/>
+                            <br class="visible-sm"/>
                         </div>
-                        <div class="col-md-6">
-                            <input type="text" class="col-md-12" name="voornaam" placeholder="Voornaam"/>
+                        <div class="col-sm-6 col-md-6">
+                            <input type="text" class="col-sm-12 col-md-12" name="voornaam" placeholder="Voornaam"/>
                         </div>
                     </div>
                     <div class="row contact-widget__form-row">
                         <div class="col-md-12">
-                            <input type="email" class="col-md-12" name="email" placeholder="Email"/>
+                            <input type="email" class="col-sm-12 col-md-12" name="email" placeholder="Email"/>
                         </div>
                     </div>
                     <div class="row contact-widget__form-row">
-                        <div class="col-md-6">
+                        <div class="col-sm-6 col-md-6">
                             <div class="contact-widget__link text-left">
                                 <a href="javascript:showStep(1)">terug</a>
                             </div>
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-sm-6 col-md-6">
                             <div class="contact-widget__submit text-center">
-                                <input type="submit" value="verstuur" class="col-md-12 text-lowercase"/>
+                                <input type="submit" value="verstuur" class="col-sm-12 col-md-12 text-lowercase"/>
                             </div>
                         </div>
                     </div>

@@ -1,27 +1,29 @@
 <footer class="footer">
     <div class="container">
         <div class="row">
-            <div class="col-md-2 text-center">
+            <div class="col-sm-4 col-md-2 text-center">
                 <img class="footer__shield" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/dist/images/assets/medica-shield.svg"/>
             </div>
-            <div class="col-md-2 text-left">
+            <div class="col-sm-8 col-md-2 text-left">
                 <address>
                     <?php echo get_option('medica_address'); ?>
                 </address>
                 <br/>
                 <a href="mailto:<?php echo get_option('medica_email'); ?>"><?php echo get_option('medica_email'); ?></a>
             </div>
-            <div class="col-md-4 text-center">
+            <div class="col-sm-9 col-md-4 text-center">
+                <br class="visible-sm"/>
                 <img class="footer__banner" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/dist/images/assets/ad.png"/>
             </div>
-            <div class="col-md-2 text-left">
+            <div class="col-sm-3 col-md-2 text-left">
+                <br class="visible-sm"/>
                 <p>Ook adverteren?</p>
                 <a href="#">contacteer ons</a>
             </div>
-            <div class="col-md-2 text-right">
-                <br/>
-                <br/>
-                <br/>
+            <div class="col-sm-12 col-md-2 text-right">
+                <br class="hidden-sm"/>
+                <br class="hidden-sm"/>
+                <br class="hidden-sm"/>
                 <br/>
                 <br/>
                 <br/>

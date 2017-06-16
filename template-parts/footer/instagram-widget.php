@@ -28,7 +28,7 @@ $iteration = 1;
         <?php
             foreach ($return->data as $post) {
             ?>
-                <div class="col-md-6 social-media-widget__item social-media-widget__item--image" style="background-image: url(<?php echo $post->images->low_resolution->url ?>)">
+                <div class="col-sm-6 col-md-6 social-media-widget__item social-media-widget__item--image" style="background-image: url(<?php echo $post->images->low_resolution->url ?>)">
 
                 </div>
             <?php

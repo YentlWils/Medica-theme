@@ -25,18 +25,20 @@
         }
 
         &:after {
-            z-index: 0;
-            content:'';
-            position: absolute;
-            top: 0;
-            left: 50%;
-            margin-left: -20px;
-            width: 0;
-            height: 0;
-            border-bottom: solid 20px white;
-            border-left: solid 20px transparent;
-            border-right: solid 20px transparent;
-            transition: .25s ease-in-out;
+            @media (min-width: $screen-md-min) {
+                z-index: 0;
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 50%;
+                margin-left: -20px;
+                width: 0;
+                height: 0;
+                border-bottom: solid 20px white;
+                border-left: solid 20px transparent;
+                border-right: solid 20px transparent;
+                transition: .25s ease-in-out;
+            }
         }
 
         &--active{
@@ -44,8 +46,10 @@
             background-color: $beta-color;
 
             &:after {
-                top: -20px;
-                border-bottom-color: $beta-color;
+                @media (min-width: $screen-md-min) {
+                    top: -20px;
+                    border-bottom-color: $beta-color;
+                }
             }
 
             .medica-map__link{

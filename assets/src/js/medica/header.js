@@ -29,4 +29,8 @@ $(document).ready(function(){
     $('.owl-item.'+slideActiveClass).removeClass(slideActiveClass);
     $('.owl-item.active').addClass(slideActiveClass);
   });
+
+  $('.medica-carousel').parallax({
+    speed : 0.6
+  });
 });

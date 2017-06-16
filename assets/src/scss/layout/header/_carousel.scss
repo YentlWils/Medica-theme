@@ -1,6 +1,12 @@
 .medica-carousel{
 
     position: relative;
+    z-index: 0;
+
+    &__parallax{
+        position: relative;
+        background-color: white;
+    }
 
     &--sliding{
 

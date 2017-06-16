@@ -7,20 +7,20 @@
 get_header();
 
 ?>
+<div class="medica-carousel__parallax">
+    <?php
+    if ( have_posts() ) :
+        while ( have_posts() ) : the_post();?>
 
-<?php
-if ( have_posts() ) :
-    while ( have_posts() ) : the_post();?>
+            <?php get_template_part("content", "standard"); ?>
 
-        <?php get_template_part("content", "standard"); ?>
+            <?php
 
-        <?php
+        endwhile;
 
-    endwhile;
+    endif;
 
-endif;
-
-?>
-
+    ?>
+</div>
 
 <?php get_footer('minimal'); ?>

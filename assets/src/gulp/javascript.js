@@ -102,7 +102,7 @@ module.exports.flowTypeStatus = () => {
 module.exports.clientLibsSourceMaps = (gulp, plugins, config) => {
     return () => {
         return gulp
-            .src([config.jsDest + '/!(vendor)**/*.js'])
+            .src([config.jsDest + '/!(vendor|plugin)**/*.js'])
             .pipe(plugins.sourcemaps.init())
             .pipe(plugins.concat('medica.js'))
             .pipe(plugins.uglify({

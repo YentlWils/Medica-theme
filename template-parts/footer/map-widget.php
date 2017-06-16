@@ -28,7 +28,7 @@
             <div class="medica-map__poi medica-map__poi--active text-center" data-marker="bar">
                 <div class="medica-map__title text-uppercase">Doc's bar</div>
                 <div class="medica-map__address">Brusselsestraat 24, 3000 Leuven</div>
-                <div class="medica-map__link"><a href="#">plan route</a></div>
+                <div class="medica-map__link"><a href="https://www.google.com/maps?daddr=50.882009,4.688499" target="_blank">plan route</a></div>
             </div>
         </div>
         <div class="col-md-6 no-padding--left">
@@ -41,7 +41,7 @@
             <div class="medica-map__poi text-center" data-marker="fac">
                 <div class="medica-map__title text-uppercase">Faculteit</div>
                 <div class="medica-map__address">Herestraat 49, 3000 Leuven</div>
-                <div class="medica-map__link"><a href="#">plan route</a></div>
+                <div class="medica-map__link"><a href="https://www.google.com/maps?daddr=50.8803796,4.6727432" target="_blank">plan route</a></div>
             </div>
         </div>
     </div>

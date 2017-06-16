@@ -15,7 +15,6 @@ $access_token = '53977759.9bbb184.44b07fe5225f473888651e041dbc3939';
 $username = 'yentl_wils';
 $user_search = api_curl_connect("https://api.instagram.com/v1/users/search?q=" . $username . "&access_token=" . $access_token);
 $user_id = $user_search->data[0]->id; // or use string 'self' to get your own media
-
 $return = api_curl_connect("https://api.instagram.com/v1/users/" . $user_id . "/media/recent?access_token=" . $access_token);
 
 $profileUrl = "https://www.instagram.com/" . $username;

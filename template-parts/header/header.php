@@ -68,13 +68,25 @@
                     <div class="container">
                         <div class="row">
                             <div class="col-md-4 col-md-offset-1">
-                                <?php wp_nav_menu( array('theme_location' => 'primary-col-1') ); ?>
+                                <?php
+                                if ( has_nav_menu( 'primary-col-1' ) ) {
+                                    wp_nav_menu( array('theme_location' => 'primary-col-1') );
+                                }
+                                ?>
                             </div>
                             <div class="col-md-4">
-                                <?php wp_nav_menu( array('theme_location' => 'primary-col-2') ); ?>
+                                <?php
+                                if ( has_nav_menu( 'primary-col-2' ) ) {
+                                    wp_nav_menu(array('theme_location' => 'primary-col-2'));
+                                }
+                                ?>
                             </div>
                             <div class="col-md-3">
-                                <?php wp_nav_menu( array('theme_location' => 'primary-col-3') ); ?>
+                                <?php
+                                if ( has_nav_menu( 'primary-col-3' ) ) {
+                                    wp_nav_menu(array('theme_location' => 'primary-col-3'));
+                                }
+                                ?>
                             </div>
                         </div>
                     </div>

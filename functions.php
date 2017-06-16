@@ -1,5 +1,7 @@
 <?php
 
+setlocale(LC_TIME, "nld_nld");
+
 /**
  * ==========================================
  * Import the theme style and script files

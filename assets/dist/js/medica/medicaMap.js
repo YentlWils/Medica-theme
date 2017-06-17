@@ -200,8 +200,6 @@ function initMap() {
       type: 'poly'
     };
 
-    var bounds = new google.maps.LatLngBounds();
-
     _.forEach(medicaMarkers, function (value, key) {
       var marker = new google.maps.Marker({
         position: { lat: value.lat, lng: value.lng },
@@ -210,13 +208,12 @@ function initMap() {
         shape: shape,
         title: key
       });
-
-      var myLatLng = new google.maps.LatLng(value.lat, value.lng);
-      bounds.extend(myLatLng);
     });
 
-    map.fitBounds(bounds);
+    var center = new google.maps.LatLng(medicaMarkers[Object.keys(medicaMarkers)[0]].lat, medicaMarkers[Object.keys(medicaMarkers)[0]].lng);
+    console.log(medicaMarkers[Object.keys(medicaMarkers)[0]]);
 
-    map.setZoom(14);
+    map.setCenter(center);
+    map.setZoom(15);
   }
 };

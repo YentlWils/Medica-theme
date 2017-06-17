@@ -280,7 +280,7 @@ function initMap() {
       type: 'poly'
     };
 
-    var bounds = new google.maps.LatLngBounds();
+    // var bounds = new google.maps.LatLngBounds();
 
     _.forEach(medicaMarkers, function(value, key) {
       var marker = new google.maps.Marker({
@@ -291,13 +291,16 @@ function initMap() {
         title: key,
       });
 
-      var myLatLng = new google.maps.LatLng(value.lat, value.lng);
-      bounds.extend(myLatLng);
+      // var myLatLng = new google.maps.LatLng(value.lat, value.lng);
+      // bounds.extend(myLatLng);
 
     });
 
-    map.fitBounds(bounds);
+    // map.fitBounds(bounds);
+    let center = new google.maps.LatLng(medicaMarkers[Object.keys(medicaMarkers)[0]].lat, medicaMarkers[Object.keys(medicaMarkers)[0]].lng);
+    console.log(medicaMarkers[Object.keys(medicaMarkers)[0]]);
 
-    map.setZoom(14);
+    map.setCenter(center)
+    map.setZoom(15);
   }
 };

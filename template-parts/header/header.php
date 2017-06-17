@@ -12,8 +12,7 @@
         <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
 
 
-        <!-- TODO: i18n -->
-        <title>Medica | <?php echo get_the_title(); ?></title>
+        <title><?php _e( 'Medica', 'medica-theme' ); ?> | <?php echo get_the_title(); ?></title>
 
         <link href="<?php echo get_stylesheet_directory_uri(); ?>/assets/dist/images/assets/favicon.ico" rel="shortcut icon" type="image/x-icon">
         <link href="<?php echo get_stylesheet_directory_uri(); ?>/assets/dist/images/assets/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180">
@@ -45,14 +44,13 @@
                         <ul class="nav navbar-nav navbar-right">
                             <li>
                                 <a href="#" class="navbar-link">
-                                    <!-- TODO: i18n -->
-                                    <span>English</span>
+                                    <span><?php _e( 'English', 'medica-theme' ); ?></span>
                                 </a>
                             </li>
                             <li>
                                 <a id="nav-menu" href="#menu" class="navbar-link menu__button" data-toggle="collapse" data-target="#main-menu">
                                     <!-- TODO: i18n -->
-                                    <span class="text">menu</span>
+                                    <span class="text text-lowercase"><?php _e( 'Menu', 'medica-theme' ); ?></span>
                                     <span class="line line--one"></span>
                                     <span class="line line--two"></span>
                                 </a>

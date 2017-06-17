@@ -21,7 +21,7 @@
                         <div class="medica-carousel__title text-uppercase">Onze skireis in zwitserland</div>
                         <div class="medica-carousel__sub-title text-lowercase">
                             <span>21-11-1990  tot  16-03-2014</span></div>
-                        <div class="medica-carousel__link text-lowercase"><a href="#">ontdek meer</a></div>
+                        <div class="medica-carousel__link text-lowercase"><a href="#"><?php _e( 'ontdek meer', 'medica-theme' ); ?></a></div>
                     </div>
                 </div>
             </div>
@@ -34,7 +34,7 @@
                         <div class="medica-carousel__title text-uppercase">Cantus avond in hartje leuven</div>
                         <div class="medica-carousel__sub-title text-lowercase">
                             <span>Donderdag</span></div>
-                        <div class="medica-carousel__link text-lowercase"><a href="#">ontdek meer</a></div>
+                        <div class="medica-carousel__link text-lowercase"><a href="#"><?php _e( 'ontdek meer', 'medica-theme' ); ?></a></div>
                     </div>
                 </div>
             </div>
@@ -47,7 +47,7 @@
                         <div class="medica-carousel__title text-uppercase">weer een stevig Feestje in de doc’s bar</div>
                         <div class="medica-carousel__sub-title text-lowercase">
                             <span>16-03-2014</span></div>
-                        <div class="medica-carousel__link text-lowercase"><a href="#">ontdek meer</a></div>
+                        <div class="medica-carousel__link text-lowercase"><a href="#"><?php _e( 'ontdek meer', 'medica-theme' ); ?></a></div>
                     </div>
                 </div>
             </div>

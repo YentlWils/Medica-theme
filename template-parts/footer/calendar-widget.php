@@ -31,7 +31,7 @@
                                 donderdag 9 november 2017
                             </div>
                             <div class="calendar-widget__link">
-                                <a href="#">ontdek meer</a>
+                                <a href="#"><?php _e( 'ontdek meer', 'medica-theme' ); ?></a>
                             </div>
                         </div>
                     </div>
@@ -55,7 +55,7 @@
                                 dinsdag 3 december 2017
                             </div>
                             <div class="calendar-widget__link">
-                                <a href="#">ontdek meer</a>
+                                <a href="#"><?php _e( 'ontdek meer', 'medica-theme' ); ?></a>
                             </div>
                         </div>
                     </div>
@@ -79,7 +79,7 @@
                                 donderdag 9 november 2017
                             </div>
                             <div class="calendar-widget__link">
-                                <a href="#">ontdek meer</a>
+                                <a href="#"><?php _e( 'ontdek meer', 'medica-theme' ); ?></a>
                             </div>
                         </div>
                     </div>
@@ -103,7 +103,7 @@
                                 donderdag 9 november 2017
                             </div>
                             <div class="calendar-widget__link">
-                                <a href="#">ontdek meer</a>
+                                <a href="#"><?php _e( 'ontdek meer', 'medica-theme' ); ?></a>
                             </div>
                         </div>
                     </div>

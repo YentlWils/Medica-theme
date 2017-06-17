@@ -17,32 +17,32 @@
     <div class="contact-widget__section" id="contact-widget--sep-2">
         <div class="contact-widget__table">
             <div class="contact-widget__content text-center">
-                <div class="contact-widget__title text-uppercase">Vul hier aan</div>
-                <div class="contact-widget__sub-title text-uppercase">wij brengen je op de hoogte</div>
+                <div class="contact-widget__title text-uppercase"><?php _e( 'Vul hier aan', 'medica-theme' ); ?></div>
+                <div class="contact-widget__sub-title text-uppercase"><?php _e( 'Wij brengen je op de hoogte', 'medica-theme' ); ?></div>
                 <div class="contact-widget__form">
                     <div class="row contact-widget__form-row">
                         <div class="col-sm-6 col-md-6">
-                            <input type="text" class="col-sm-12 col-md-12" name="name" placeholder="Naam"/>
+                            <input type="text" class="col-sm-12 col-md-12" name="name" placeholder="<?php _e( 'Naam', 'medica-theme' ); ?>"/>
                             <br class="visible-sm"/>
                         </div>
                         <div class="col-sm-6 col-md-6">
-                            <input type="text" class="col-sm-12 col-md-12" name="voornaam" placeholder="Voornaam"/>
+                            <input type="text" class="col-sm-12 col-md-12" name="voornaam" placeholder="<?php _e( 'Voornaam', 'medica-theme' ); ?>"/>
                         </div>
                     </div>
                     <div class="row contact-widget__form-row">
                         <div class="col-md-12">
-                            <input type="email" class="col-sm-12 col-md-12" name="email" placeholder="Email"/>
+                            <input type="email" class="col-sm-12 col-md-12" name="email" placeholder="<?php _e( 'Email', 'medica-theme' ); ?>"/>
                         </div>
                     </div>
                     <div class="row contact-widget__form-row">
                         <div class="col-sm-6 col-md-6">
                             <div class="contact-widget__link text-left">
-                                <a href="javascript:showStep(1)">terug</a>
+                                <a href="javascript:showStep(1)"><?php _e( 'terug', 'medica-theme' ); ?></a>
                             </div>
                         </div>
                         <div class="col-sm-6 col-md-6">
                             <div class="contact-widget__submit text-center">
-                                <input type="submit" value="verstuur" class="col-sm-12 col-md-12 text-lowercase"/>
+                                <input type="submit" value="<?php _e( 'verstuur', 'medica-theme' ); ?>" class="col-sm-12 col-md-12 text-lowercase"/>
                             </div>
                         </div>
                     </div>
@@ -55,8 +55,8 @@
     <div class="contact-widget__section" id="contact-widget--sep-3">
         <div class="contact-widget__table">
             <div class="contact-widget__content text-center">
-                <div class="contact-widget__title text-uppercase">Bedankt!</div>
-                <div class="contact-widget__sub-title text-uppercase">we brengen je op de hoogte</div>
+                <div class="contact-widget__title text-uppercase"><?php _e( 'Bedankt!', 'medica-theme' ); ?></div>
+                <div class="contact-widget__sub-title text-uppercase"><?php _e( 'we brengen je op de hoogte', 'medica-theme' ); ?></div>
             </div>
         </div>
     </div>

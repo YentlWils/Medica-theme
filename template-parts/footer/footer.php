@@ -6,9 +6,7 @@
             </div>
             <div class="col-sm-8 col-md-2 text-left">
                 <br class="visible-xs"/>
-                <address>
-                    <?php echo get_option('medica_address'); ?>
-                </address>
+                <address><?php echo get_option('medica_address'); ?></address>
                 <br/>
                 <a href="mailto:<?php echo get_option('medica_email'); ?>"><?php echo get_option('medica_email'); ?></a>
             </div>

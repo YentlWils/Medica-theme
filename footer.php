@@ -2,7 +2,7 @@
     <?php include "template-parts/footer/calendar-widget.php" ?>
 
     <!-- Social media section -->
-    <div class="container">
+    <div class="container-no">
         <div class="row">
             <div class="col-md-6 no-padding--right">
                 <?php include "template-parts/footer/contact-widget.php" ?>

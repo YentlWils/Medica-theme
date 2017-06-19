@@ -7,7 +7,7 @@
  */
 ?>
 
-<div class="container">
+<div class="container-no">
     <script type="application/javascript">
         var medicaMarkers = {};
         var medicaMapIcon = "<?php echo get_stylesheet_directory_uri(); ?>/assets/dist/images/assets/marker.png";

@@ -7,7 +7,7 @@
  */
 ?>
 
-<div class="container">
+<div class="container-no">
     <div class="row">
         <div class="col-md-12">
             <div class="medica-quote">

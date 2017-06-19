@@ -8,7 +8,7 @@
 
 ?>
 
-<div class="container">
+<div class="container-no">
     <div class="row">
         <div class="col-md-12">
             <div class="col-xs-6 col-sm-3 col-md-3 sponsor-widget text-center">

@@ -1,6 +1,7 @@
 html,
 body {
     font-family: $font-family;
+    letter-spacing: 2px;
     background-color: $default-background;
     overflow-x: hidden; /* Prevent scroll on narrow devices */
 }

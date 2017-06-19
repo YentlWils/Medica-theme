@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container-no">
     <div class="row">
         <div class="col-md-6 no-padding--right">
             <a href="#" class="shortcut-widget__link">

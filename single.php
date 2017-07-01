@@ -1,27 +1,18 @@
-<?php
-/**
- * Created by IntelliJ IDEA.
- * User: yentl
- * Date: 15/05/17
- * Time: 20:11
- */
-
-get_header();
-
-echo "General";
-
-if ( have_posts() ) :
-    while ( have_posts() ) : the_post(); echo "This is the format: " . get_post_format(); ?>
-
-        <?php get_template_part("content", get_post_format()); ?>
-
+<?php get_header(); ?>
+    <div class="medica-carousel__parallax">
         <?php
+        if ( have_posts() ) :
+            while ( have_posts() ) : the_post();?>
 
-    endwhile;
+                <?php get_template_part("content", "standard"); ?>
 
-endif;
+                <?php
 
+            endwhile;
 
-get_footer();
+        endif;
+        ?>
+    </div>
+<?php //get_sidebar(); ?>
 
-?>
+<?php get_footer(); ?>

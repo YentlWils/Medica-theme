@@ -46,3 +46,5 @@ if ($workgroups):
 <?php
 
 endif;
+
+unset($workgroups);

@@ -53,3 +53,5 @@ if ($links):
 </div>
 <?php
 endif;
+
+unset($links);

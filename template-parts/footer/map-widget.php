@@ -73,3 +73,5 @@ if ($poi):
 </div>
 <?php
 endif;
+
+unset($poi);

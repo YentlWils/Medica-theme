@@ -12,7 +12,32 @@
             </div>
             <div class="col-sm-9 col-md-4 text-center hidden-xs">
                 <br class="visible-sm"/>
-                <img class="footer__banner" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/dist/images/assets/ad.png"/>
+                <?php
+                    $attr = array(
+                        'limit' => '1'
+                    );
+
+                    $mainSponsors = getMainSponsors($attr);
+
+                    if ($mainSponsors):
+
+                        $post = $mainSponsors[0];
+
+                        setup_postdata($post);
+
+                        // - custom variables -
+                        $custom = get_post_custom(get_the_ID());
+                        $url = $custom["tf_sponsors_url"][0];
+
+                ?>
+                        <a href="<?php echo $url; ?>">
+                            <img class="footer__banner" src="<?php echo the_post_thumbnail_url( 'full' ) ?>" alt="<?php the_title() ?>"/>
+                        </a>
+                <?php
+                endif;
+
+                unset($mainSponsors);
+                ?>
             </div>
             <div class="col-sm-3 col-md-2 text-left hidden-xs">
                 <br class="visible-sm"/>

@@ -12,6 +12,8 @@ include "theme-functions/post-types/workgroup.php";
 
 include "theme-functions/post-types/links.php";
 
+include "theme-functions/post-types/sponsors.php";
+
 include "theme-functions/post-types/poi.php";
 
 include "theme-functions/admin-panel.php";

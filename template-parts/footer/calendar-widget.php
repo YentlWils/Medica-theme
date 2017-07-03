@@ -84,3 +84,5 @@ if ($events):
 <?php
 
 endif;
+
+unset($events);

@@ -4,7 +4,7 @@ include "theme-functions/scripts.php";
 
 include "theme-functions/setup.php";
 
-include "theme-functions/custom-post-type.php";
+include "theme-functions/post-types/slider.php";
 
 include "theme-functions/post-types/events.php";
 

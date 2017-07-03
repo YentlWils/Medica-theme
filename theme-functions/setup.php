@@ -86,3 +86,31 @@ function medica_theme_support(){
 }
 
 add_action( 'after_setup_theme', 'medica_theme_support' );
+
+/**
+ * ==========================================
+ * Replace the post button with a space
+ * ==========================================
+ */
+
+function add_admin_menu_separator( $position ) {
+
+    global $menu;
+
+    $menu[ $position ] = array(
+        0	=>	'',
+        1	=>	'read',
+        2	=>	'separator' . $position,
+        3	=>	'',
+        4	=>	'wp-menu-separator'
+    );
+
+}
+
+function set_admin_menu_separator() {
+    do_action( 'admin_init', 5 );
+    do_action( 'admin_init', 9 );
+}
+
+add_action( 'admin_init', 'add_admin_menu_separator' );
+add_action( 'admin_menu', 'set_admin_menu_separator' );

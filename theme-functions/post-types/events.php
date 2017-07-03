@@ -39,6 +39,7 @@ function create_event_postype() {
         'rewrite' => array( "slug" => "events" ),
         'supports'=> array('title', 'thumbnail', 'editor') ,
         'show_in_nav_menus' => true,
+        "menu_position" => 7,
 //        'taxonomies' => array( 'tf_eventcategory', 'post_tag')
     );
 

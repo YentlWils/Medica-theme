@@ -36,7 +36,7 @@ function create_slider_postype() {
         'capability_type' => 'post',
         'menu_icon' => "dashicons-images-alt2",
         'hierarchical' => false,
-//        'rewrite' => array( "slug" => "events" ),
+        'rewrite' => array( "slug" => "slide"),
         'supports'=> array('title', 'thumbnail', 'editor') ,
         'show_in_nav_menus' => true,
         "menu_position" => 7,

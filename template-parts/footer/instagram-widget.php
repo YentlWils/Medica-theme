@@ -41,10 +41,10 @@ $iteration = 1;
     <div class="social-media-widget__overlay social-media-widget__overlay--instagram text-center">
         <div class="social-media-widget__cell">
             <div class="social-media-widget__title text-uppercase">
-                Ontdek meer op onze instagram
+                <?php _e("Ontdek meer op onze instagram" ,'medica-theme') ;?>
             </div>
             <div class="social-media-widget__link">
-                <a href="<?php echo $profileUrl ?>">Ga naar onze instagram</a>
+                <a href="<?php echo $profileUrl ?>" target="_blank"><?php _e("Ga naar onze instagram" ,'medica-theme') ;?></a>
             </div>
         </div>
     </div>

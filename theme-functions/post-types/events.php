@@ -237,3 +237,39 @@ function events_updated_messages( $messages ) {
 }
 
 flush_rewrite_rules( false );
+
+// 7. Display logic for getting the events overview
+
+function getEvents ( $atts )
+{
+
+    // - define arguments -
+    extract(shortcode_atts(array(
+        'limit' => '10', // # of events to show
+        'fromToday' => true
+    ), $atts));
+
+
+    // ===== LOOP: FULL EVENTS SECTION =====
+
+    // - hide events that are older than 6am today (because some parties go past your bedtime) -
+
+    $today6am = strtotime('today 6:00') + ( get_option( 'gmt_offset' ) * 3600 );
+
+    // - query -
+    global $wpdb;
+    $querystr = "
+                        SELECT *
+                        FROM $wpdb->posts wposts, $wpdb->postmeta metastart, $wpdb->postmeta metaend
+                        WHERE (wposts.ID = metastart.post_id AND wposts.ID = metaend.post_id)
+                        AND (metaend.meta_key = 'tf_events_enddate' AND metaend.meta_value > $today6am )
+                        AND metastart.meta_key = 'tf_events_enddate'
+                        AND wposts.post_type = 'tf_events'
+                        AND wposts.post_status = 'publish'
+                        ORDER BY metastart.meta_value ASC LIMIT $limit
+                     ";
+
+    $events = $wpdb->get_results($querystr, OBJECT);
+
+    return $events;
+}

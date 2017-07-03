@@ -211,7 +211,6 @@ function initMap() {
     });
 
     var center = new google.maps.LatLng(medicaMarkers[Object.keys(medicaMarkers)[0]].lat, medicaMarkers[Object.keys(medicaMarkers)[0]].lng);
-    console.log(medicaMarkers[Object.keys(medicaMarkers)[0]]);
 
     map.setCenter(center);
     map.setZoom(15);

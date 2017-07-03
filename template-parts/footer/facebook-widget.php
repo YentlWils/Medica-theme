@@ -46,7 +46,7 @@ $profileUrl = "https://www.facebook.com/" . $page_name . "/";
             $date = new DateTime($fb_post->created_time);
 
             ?>
-            <div class="social-media-widget__date"><?php echo strftime("%a, %d %B %Y om %H:%M", $date->getTimestamp()); ?> </div>
+            <div class="social-media-widget__date text-lowercase"><?php echo date_i18n("D, j F Y", $date->getTimestamp()) . " " . __("om",'medica-theme') . " " . date_i18n("H:i", $date->getTimestamp()); ?> </div>
             <div class="social-media-widget__text">
                 <?php echo $post->message; ?>
             </div>
@@ -55,10 +55,10 @@ $profileUrl = "https://www.facebook.com/" . $page_name . "/";
     <div class="social-media-widget__overlay social-media-widget__overlay--facebook text-center">
         <div class="social-media-widget__cell">
             <div class="social-media-widget__title text-uppercase">
-                Ontdek meer op onze facebook
+                <?php _e("Ontdek meer op onze facebook" ,'medica-theme') ;?>
             </div>
             <div class="social-media-widget__link">
-                <a href="<?php echo $profileUrl ?>">Ga naar onze facebook</a>
+                <a href="<?php echo $profileUrl ?>" target="_blank"><?php _e("Ga naar onze facebook" ,'medica-theme') ;?></a>
             </div>
         </div>
     </div>

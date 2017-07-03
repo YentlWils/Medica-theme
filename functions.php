@@ -1,7 +1,5 @@
 <?php
 
-setlocale(LC_TIME, "nld_nld");
-
 include "theme-functions/scripts.php";
 
 include "theme-functions/setup.php";

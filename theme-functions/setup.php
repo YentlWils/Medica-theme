@@ -109,7 +109,7 @@ function add_admin_menu_separator( $position ) {
 
 function set_admin_menu_separator() {
     do_action( 'admin_init', 5 );
-    do_action( 'admin_init', 9 );
+//    do_action( 'admin_init', 9 );
 }
 
 add_action( 'admin_init', 'add_admin_menu_separator' );

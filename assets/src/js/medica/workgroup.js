@@ -9,6 +9,7 @@ $(document).ready(function(){
     touchDrag: false,
     pullDrag: false,
     freeDrag: false,
+    autoplayHoverPause: false,
     loop:true,
     autoplay:true,
     autoplayTimeout:7000,

@@ -1,28 +1,55 @@
+<?php
+
+$attr = array(
+    'limit' => '2'
+);
+
+$links = getLinks($attr);
+
+if ($links):
+
+?>
 <div class="container-no">
     <div class="row">
-        <div class="col-md-6 no-padding--right">
-            <a href="#" class="shortcut-widget__link">
+        <?php
+
+        $index = 1;
+        foreach ($links as $post):
+            setup_postdata($post);
+
+            // - custom variables -
+            $custom = get_post_custom(get_the_ID());
+            $url = $custom["tf_links_url"][0];
+
+            if($index % 2 == 0){
+                $paddingClass = "no-padding--left";
+            }else {
+                $paddingClass = "no-padding--right";
+            }
+
+            $index++;
+
+            ?>
+
+
+
+        <div class="col-md-6 <?php echo $paddingClass ?>">
+            <a href="<?php echo $url ?>" target="_blank" class="shortcut-widget__link">
                 <div class="shortcut-widget text-center text-uppercase">
-                    <div class="shortcut-widget__image" style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>/assets/dist/images/assets/temp/cursusdienst.png')"></div>
+                    <div class="shortcut-widget__image" style="background-image: url('<?php echo the_post_thumbnail_url( 'full' ); ?>')"></div>
                     <div class="shortcut-widget__table">
                         <div class="shortcut-widget__cell">
-                            cursusdienst
+                            <?php the_title(); ?>
                         </div>
                     </div>
                 </div>
             </a>
         </div>
-        <div class="col-md-6 no-padding--left">
-            <a href="#" class="shortcut-widget__link">
-                <div class="shortcut-widget text-center text-uppercase" >
-                    <div class="shortcut-widget__image" style="background-image: url('<?php echo get_stylesheet_directory_uri(); ?>/assets/dist/images/assets/temp/wikemedica.png')"></div>
-                    <div class="shortcut-widget__table">
-                        <div class="shortcut-widget__cell">
-                            wikimedica
-                        </div>
-                    </div>
-                </div>
-            </a>
-        </div>
+
+        <?php
+            endforeach;
+        ?>
     </div>
 </div>
+<?php
+endif;

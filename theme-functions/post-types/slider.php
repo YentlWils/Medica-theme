@@ -120,7 +120,7 @@ function tf_slider_meta () {
         <hr/>
         <ul>
             <li>
-                <label>Subtitle</label><input name="tf_slider_position" value="<?php echo $postition; ?>" type="number" /><em>The order of the visible slides</em>
+                <label>Position</label><input name="tf_slider_position" value="<?php echo $postition; ?>" type="number" /><em>The order of the visible slides</em>
             </li>
         </ul>
     </div>

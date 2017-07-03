@@ -29,7 +29,7 @@ function create_workgroup_postype() {
     $args = array(
         'label' => __('Workgroup'),
         'labels' => $labels,
-        'public' => true,
+        'public' => false,
         'can_export' => true,
         'show_ui' => true,
         '_builtin' => false,

@@ -29,7 +29,7 @@ function create_links_postype() {
     $args = array(
         'label' => __('Links'),
         'labels' => $labels,
-        'public' => true,
+        'public' => false,
         'can_export' => true,
         'show_ui' => true,
         '_builtin' => false,

@@ -14,7 +14,7 @@
 
 function add_theme_menu_item()
 {
-    add_menu_page("Medica Settings", "Medica Settings", "manage_options", "theme-panel", "theme_settings_page", null, 8);
+    add_menu_page("Medica Settings", "Medica Settings", "manage_options", "theme-panel", "theme_settings_page", null, 9);
     add_submenu_page( 'theme-panel', 'Footer Settings', 'Footer Settings', 'manage_options', 'theme-panel-footer', "theme_footer_page");
     add_submenu_page( 'theme-panel', 'Social Settings', 'Social Settings', 'manage_options', 'theme-panel-social', "theme_social_page");
 }

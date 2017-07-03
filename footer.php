@@ -15,7 +15,7 @@
     </div>
 
     <!-- Quote -->
-    <?php include "template-parts/footer/quote-widget.php" ?>
+    <?php include "template-parts/footer/workgroup-widget.php" ?>
 
     <!-- Shortcuts -->
     <?php include "template-parts/footer/shortcut-widget.php" ?>

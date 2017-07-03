@@ -39,7 +39,7 @@ function create_event_postype() {
         'rewrite' => array( "slug" => "events" ),
         'supports'=> array('title', 'thumbnail', 'editor') ,
         'show_in_nav_menus' => true,
-        "menu_position" => 7,
+        "menu_position" => 6,
 //        'taxonomies' => array( 'tf_eventcategory', 'post_tag')
     );
 
@@ -236,8 +236,6 @@ function events_updated_messages( $messages ) {
 
     return $messages;
 }
-
-flush_rewrite_rules( false );
 
 // 7. Display logic for getting the events overview
 

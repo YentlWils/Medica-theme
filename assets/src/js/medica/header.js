@@ -3,7 +3,7 @@ var slidingClass = "medica-carousel--sliding";
 var slideActiveClass = "medica-carousel__item--activate";
 
 $(document).ready(function(){
-  var owl = $('.owl-carousel');
+  var owl = $('.medica-carousel__holder.owl-carousel');
 
   owl.owlCarousel({
     items:1,
@@ -12,7 +12,11 @@ $(document).ready(function(){
     autoplayTimeout:10000,
     autoplayHoverPause: false,
     animateIn: 'fadeIn',
-    animateOut: 'fadeOut',
+    animateOut: 'medicaFadeOut',
+    mouseDrag: false,
+    touchDrag: false,
+    pullDrag: false,
+    freeDrag: false,
     responsive : {
       // breakpoint from 768 up
       0 : {

@@ -39,7 +39,7 @@ function create_slider_postype() {
         'rewrite' => array( "slug" => "slide"),
         'supports'=> array('title', 'thumbnail', 'editor') ,
         'show_in_nav_menus' => true,
-        "menu_position" => 7,
+        "menu_position" => 6,
     );
 
     register_post_type( 'tf_slider', $args);

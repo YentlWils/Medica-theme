@@ -10,8 +10,8 @@
                 <br/>
                 <a href="mailto:<?php echo get_option('medica_email'); ?>"><?php echo get_option('medica_email'); ?></a>
             </div>
-            <div class="col-sm-9 col-md-4 text-center hidden-xs">
-                <br class="visible-sm"/>
+            <div class="col-sm-9 col-md-4 text-center">
+                <br/>
                 <?php
                     $attr = array(
                         'limit' => '1'

@@ -21,6 +21,7 @@
 <div class="medica-carousel <?php echo $carousel_modifier ?>">
     <div class="medica-carousel__holder owl-carousel">
         <?php
+            $dots = count($slider);
 
             foreach ($slider as $post):
                 setup_postdata($post);
@@ -45,6 +46,21 @@
         <?php
               endforeach;
         ?>
+    </div>
+    <div class="medica-carousel__dots-container">
+        <div class="medica-carousel__dots-table">
+            <div class="medica-carousel__dots-holder">
+                <div class="medica-carousel__dots owl-dots">
+                    <?php
+                        for ($i = 1; $i <= $dots; $i++) {
+                            ?>
+                            <div class="owl-dot"><span></span></div>
+                            <?php
+                        }
+                    ?>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 <?php

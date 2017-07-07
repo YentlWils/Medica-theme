@@ -17,6 +17,7 @@ $(document).ready(function () {
     touchDrag: false,
     pullDrag: false,
     freeDrag: false,
+    dotsContainer: ".medica-carousel__dots",
     responsive: {
       0: {
         dots: false
@@ -42,6 +43,6 @@ $(document).ready(function () {
   });
 
   $('.medica-carousel').parallax({
-    speed: 0.6
+    speed: 0.75
   });
 });

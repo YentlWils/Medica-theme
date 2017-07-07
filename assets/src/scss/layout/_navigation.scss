@@ -7,6 +7,10 @@
     //Menu open state
     &--menu-open{
         background-color: $menu-background !important;
+        // fill the entire page with the menu
+        bottom: 0;
+        margin-bottom: 0px;
+        overflow-y: scroll;
 
         .navbar-header{
             &.scrolling-class{

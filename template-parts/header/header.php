@@ -41,14 +41,22 @@
                         <a id="brand" class="navbar-brand" href="<?php echo get_home_url(); ?>">
                             <?php include "logo.php" ?>
                         </a>
-                        <ul class="nav navbar-nav navbar-right">
+
+                        <a class="nav-menu navbar-toggle right hidden-sm" data-toggle="collapse" data-target="#main-menu">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </a>
+
+                        <ul class="nav navbar-nav navbar-right hidden-xs">
                             <li>
                                 <a href="#" class="navbar-link">
                                     <span><?php _e( 'English', 'medica-theme' ); ?></span>
                                 </a>
                             </li>
                             <li>
-                                <a id="nav-menu" href="#menu" class="navbar-link menu__button" data-toggle="collapse" data-target="#main-menu">
+                                <a href="#menu" class="nav-menu navbar-link menu__button" data-toggle="collapse" data-target="#main-menu">
                                     <!-- TODO: i18n -->
                                     <span class="text text-lowercase"><?php _e( 'Menu', 'medica-theme' ); ?></span>
                                     <span class="line line--one"></span>

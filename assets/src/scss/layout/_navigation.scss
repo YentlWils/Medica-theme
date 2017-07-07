@@ -27,6 +27,10 @@
                 .line{
                     background-color: white;
                 }
+
+                .icon-bar{
+                    background-color: white;
+                }
             }
         }
     }
@@ -45,6 +49,10 @@
             }
 
             .line{
+                background-color: $beta-color;
+            }
+
+            .icon-bar{
                 background-color: $beta-color;
             }
         }
@@ -105,6 +113,10 @@
             box-shadow: 1px 1px 1px rgba(0,0,0,.1);
         }
     }
+
+    .icon-bar{
+        background-color: white;
+    }
 }
 
 .navbar-brand.scrolling-class,
@@ -114,3 +126,4 @@
 .navbar-container{
     transition: 0.8s all;
 }
+

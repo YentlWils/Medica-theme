@@ -13,14 +13,14 @@
         position: absolute;
         z-index: 9;
         font-size: 1.4em;
-        top: 10px;
-        left: 10px;
+        top: 15px;
+        left: 20px;
         color: white;
         opacity: 0.5;
         transition: all 0.25s ease-in-out;
 
         &-facebook{
-            color: $alpha-color;
+            color: lighten($alpha-color, 40);
         }
     }
 
@@ -37,7 +37,7 @@
         }
 
         &--text{
-            padding: 10px 40px 40px 40px;
+            padding: 15px 40px 20px 70px;
         }
     }
 

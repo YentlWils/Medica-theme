@@ -57,7 +57,7 @@ $profileUrl = "https://www.facebook.com/" . $page_name . "/";
             <div class="social-media-widget__title text-uppercase">
                 <?php _e("Ontdek meer op onze facebook" ,'medica-theme') ;?>
             </div>
-            <div class="social-media-widget__link">
+            <div class="social-media-widget__link text-lowercase">
                 <a href="<?php echo $profileUrl ?>" target="_blank"><?php _e("Ga naar onze facebook" ,'medica-theme') ;?></a>
             </div>
         </div>

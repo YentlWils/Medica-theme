@@ -2,6 +2,8 @@ var $ = jQuery;
 
 var map = null;
 
+var gmapsMarkers = {};
+
 $(document).on('click', '.medica-map__poi:not(a)', function(e) {
   let marker = $(this);
   let markerId = marker.attr('data-marker');
@@ -10,9 +12,20 @@ $(document).on('click', '.medica-map__poi:not(a)', function(e) {
 
   map.panTo(center);
 
+  // Change the icons of the markers
+  _.forEach(gmapsMarkers, function(value, key) {
+    "use strict";
+    value.setIcon(getIcon(medicaMapIconInactive))
+  });
+
+  gmapsMarkers[markerId].setIcon(getIcon());
+
   let activeClass = "medica-map__poi--active";
   $('.' + activeClass).removeClass(activeClass);
   marker.addClass(activeClass);
+
+
+
 });
 
 function initMap() {
@@ -263,15 +276,6 @@ function initMap() {
 
   function setMarkers() {
 
-    var image = {
-      url: medicaMapIcon,
-      // This marker is 20 pixels wide by 32 pixels high.
-      size: new google.maps.Size(22, 22),
-      // The origin for this image is (0, 0).
-      origin: new google.maps.Point(0, 0),
-      // The anchor for this image is the base of the flagpole at (0, 32).
-      anchor: new google.maps.Point(11, 11)
-    };
     // Shapes define the clickable region of the icon. The type defines an HTML
     // <area> element 'poly' which traces out a polygon as a series of X,Y points.
     // The final coordinate closes the poly by connecting to the first coordinate.
@@ -282,11 +286,15 @@ function initMap() {
 
     // var bounds = new google.maps.LatLngBounds();
 
+    let i = 0;
+
     _.forEach(medicaMarkers, function(value, key) {
-      var marker = new google.maps.Marker({
+      let image = i++ == 0 ? medicaMapIcon : medicaMapIconInactive;
+
+      gmapsMarkers[key] = new google.maps.Marker({
         position: {lat: value.lat, lng: value.lng},
         map: map,
-        icon: image,
+        icon: getIcon(image),
         shape: shape,
         title: key,
       });
@@ -302,4 +310,20 @@ function initMap() {
     map.setCenter(center)
     map.setZoom(15);
   }
+
 };
+
+function getIcon(image = medicaMapIcon){
+
+  var image = {
+    url: image,
+    // This marker is 20 pixels wide by 32 pixels high.
+    size: new google.maps.Size(22, 22),
+    // The origin for this image is (0, 0).
+    origin: new google.maps.Point(0, 0),
+    // The anchor for this image is the base of the flagpole at (0, 32).
+    anchor: new google.maps.Point(11, 11)
+  };
+
+  return image;
+}

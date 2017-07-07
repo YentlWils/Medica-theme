@@ -2,6 +2,8 @@ var $ = jQuery;
 
 var map = null;
 
+var gmapsMarkers = {};
+
 $(document).on('click', '.medica-map__poi:not(a)', function (e) {
   var marker = $(this);
   var markerId = marker.attr('data-marker');
@@ -9,6 +11,14 @@ $(document).on('click', '.medica-map__poi:not(a)', function (e) {
   var center = new google.maps.LatLng(latLng.lat, latLng.lng);
 
   map.panTo(center);
+
+  _.forEach(gmapsMarkers, function (value, key) {
+    "use strict";
+
+    value.setIcon(getIcon(medicaMapIconInactive));
+  });
+
+  gmapsMarkers[markerId].setIcon(getIcon());
 
   var activeClass = "medica-map__poi--active";
   $('.' + activeClass).removeClass(activeClass);
@@ -184,27 +194,20 @@ function initMap() {
   setMarkers();
 
   function setMarkers() {
-
-    var image = {
-      url: medicaMapIcon,
-
-      size: new google.maps.Size(22, 22),
-
-      origin: new google.maps.Point(0, 0),
-
-      anchor: new google.maps.Point(11, 11)
-    };
-
     var shape = {
       coords: [1, 1, 1, 20, 18, 20, 18, 1],
       type: 'poly'
     };
 
+    var i = 0;
+
     _.forEach(medicaMarkers, function (value, key) {
-      var marker = new google.maps.Marker({
+      var image = i++ == 0 ? medicaMapIcon : medicaMapIconInactive;
+
+      gmapsMarkers[key] = new google.maps.Marker({
         position: { lat: value.lat, lng: value.lng },
         map: map,
-        icon: image,
+        icon: getIcon(image),
         shape: shape,
         title: key
       });
@@ -216,3 +219,20 @@ function initMap() {
     map.setZoom(15);
   }
 };
+
+function getIcon() {
+  var image = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : medicaMapIcon;
+
+
+  var image = {
+    url: image,
+
+    size: new google.maps.Size(22, 22),
+
+    origin: new google.maps.Point(0, 0),
+
+    anchor: new google.maps.Point(11, 11)
+  };
+
+  return image;
+}

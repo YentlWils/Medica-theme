@@ -10,7 +10,10 @@
         border: 1px solid $beta-color;
         color: $beta-color;
 
-        padding: 20px;
+        padding: 30px;
+        @media (min-width: $screen-sm-min) {
+            padding: 20px;
+        }
         position: relative;
 
         cursor: pointer;

@@ -43,6 +43,6 @@ $(document).ready(function () {
   });
 
   $('.medica-carousel').parallax({
-    speed: 0.75
+    speed: 0.6
   });
 });

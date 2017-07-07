@@ -1,5 +1,7 @@
 input{
     color: $alpha-color;
+    font-size: 1.2em;
+    padding: 10px;
 
     &::placeholder{
         color: lighten($alpha-color, 40);
@@ -14,8 +16,6 @@ input{
 
         box-shadow: none;
         border: none;
-
-        padding: 10px;
 
         &:hover, &:focus{
             background-color: lighten($beta-color, 10);

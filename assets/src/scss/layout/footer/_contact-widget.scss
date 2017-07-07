@@ -4,8 +4,8 @@
     background-position: center center;
 
     &, &__table{
-        min-height: 160 * 2px;
-        max-height: 160 * 2px;
+        min-height: 200 * 2px;
+        max-height: 200 * 2px;
     }
 
     &__section{
@@ -38,9 +38,10 @@
     }
 
     &__sub-title{
-        font-size: 1.2em;
+        //font-size: 1.2em;
         font-weight: 100;
         margin-bottom: 10px;
+        color: $delta-color;
     }
 
     &__highlight{
@@ -68,6 +69,7 @@
     }
 
     &__link{
+        padding: 10px;
         a{
             color: white;
             border-color: white;

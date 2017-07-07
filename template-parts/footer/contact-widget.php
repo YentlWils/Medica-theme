@@ -3,11 +3,11 @@
     <div class="contact-widget__section contact-widget__section--active" id="contact-widget--sep-1">
         <div class="contact-widget__table">
             <div class="contact-widget__content text-center">
-                <div class="contact-widget__title text-uppercase">Doc's bar feestje</div>
-                <div class="contact-widget__sub-title text-uppercase">donderdag vanaf 19:00</div>
-                <div class="contact-widget__highlight">11-11-2017</div>
+                <div class="contact-widget__title text-uppercase"><?php _e("Doc's bar feestje", 'medica-theme')?></div>
+                <div class="contact-widget__sub-title text-uppercase"><?php _e("donderdag vanaf 19:00", 'medica-theme')?></div>
+                <div class="contact-widget__highlight"><?php _e("11-11-2017", 'medica-theme')?></div>
                 <div class="contact-widget__link">
-                    <a href="javascript:showStep(2)">zin om te komen tappen</a>
+                    <a href="javascript:showStep(2)"><?php _e("zin om te komen tappen/draaien?", 'medica-theme')?></a>
                 </div>
             </div>
         </div>

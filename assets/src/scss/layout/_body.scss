@@ -27,8 +27,13 @@ a{
     transition: .25s ease-in-out;
 
     &:hover{
+        color: $beta-color;
         text-decoration: none;
         padding-bottom: 0px;
+    }
+
+    &:active, &:visited, &:focus{
+        color: $beta-color;
     }
 }
 

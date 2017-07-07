@@ -30,7 +30,7 @@
     }
 
     &__day{
-        color: $light-alpha-color;
+        color: darken($light-alpha-color, 10);
         display: inline-block;
         font-size: 2em;
 
@@ -74,4 +74,11 @@
         margin-bottom: 20px;
     }
 
+    &__link{
+        @media (max-width: $screen-xs-max) {
+            text-align: center;
+            font-size: 1.2em;
+            margin-left: -46px;
+        }
+    }
 }

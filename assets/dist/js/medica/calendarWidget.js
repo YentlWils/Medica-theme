@@ -1,15 +1,18 @@
 var $ = jQuery;
+var calendarWidgetLink = ".calendar-widget__link a";
 var calendarWidget = ".calendar-widget";
 var calendarRow = ".calendar-widget__row";
 
 $(document).ready(function () {
-  $(calendarWidget).hover(function (e) {
-    var element = $(e.currentTarget);
-    var backgroundImg = element.attr('data-bg-img');
+  $(calendarWidgetLink).hover(function (e) {
+    var widgetElement = $(e.currentTarget).closest(calendarWidget);
+    var widgetRow = $(e.currentTarget).closest(calendarRow);
+    var backgroundImg = widgetElement.attr('data-bg-img');
 
-    $(calendarRow).css("background-image", "url(" + backgroundImg + ")");
+    widgetRow.css("background-image", "url(" + backgroundImg + ")");
   }, function (e) {
 
-    $(calendarRow).removeAttr("style");
+    var widgetRow = $(e.currentTarget).closest(calendarRow);
+    widgetRow.removeAttr("style");
   });
 });

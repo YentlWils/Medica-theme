@@ -1,22 +1,25 @@
 var $ = jQuery;
+var calendarWidgetLink = ".calendar-widget__link a";
 var calendarWidget = ".calendar-widget";
 var calendarRow = ".calendar-widget__row";
 
 $(document).ready(function(){
-  $(calendarWidget).hover(
+  $(calendarWidgetLink).hover(
     // Hover in
     function(e) {
       // Todo bug when slide over title
-      let element = $(e.currentTarget);
-      let backgroundImg = element.attr('data-bg-img');
+      let widgetElement = $(e.currentTarget).closest(calendarWidget);
+      let widgetRow = $(e.currentTarget).closest(calendarRow);
+      let backgroundImg = widgetElement.attr('data-bg-img');
 
-      $(calendarRow).css("background-image", "url(" + backgroundImg + ")");
+      widgetRow.css("background-image", "url(" + backgroundImg + ")");
 
     },
     // Hover out
     function(e) {
 
-      $(calendarRow).removeAttr("style");
+      let widgetRow = $(e.currentTarget).closest(calendarRow);
+      widgetRow.removeAttr("style");
 
     }
   );

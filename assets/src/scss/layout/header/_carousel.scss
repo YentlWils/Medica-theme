@@ -52,6 +52,12 @@
         top: 0px;
         bottom: 0px;
         right: 40px;
+
+        display: none;
+
+        @media (min-width: $screen-sm-min) {
+            display: block;
+        }
     }
 
     &__dots-table{
@@ -104,7 +110,7 @@
 
 
                 height: 350px;
-                padding-top: 95px;
+                padding-top: 115px;
 
 
                 @media (min-width: $screen-sm-min) {
@@ -133,7 +139,7 @@
         position: relative;
 
         height: 400px;
-        padding-top: 95px;
+        padding-top: 130px;
 
 
         @media (min-width: $screen-sm-min) {
@@ -169,10 +175,14 @@
 
     &__title{
         color: white;
-        font-size: 3em;
+        font-size: 2em;
         font-weight: 600;
         margin-bottom: 20px;
         opacity: 0;
+
+        @media (min-width: $screen-sm-min) {
+            font-size: 3em;
+        }
     }
 
     &__sub-title{

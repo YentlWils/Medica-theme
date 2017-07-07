@@ -101,8 +101,26 @@
     &--condensed{
         .medica-carousel{
             &__item{
-                height: 480px;
-                padding-top: 140px;
+
+
+                height: 350px;
+                padding-top: 95px;
+
+
+                @media (min-width: $screen-sm-min) {
+                    height: 400px;
+                    padding-top: 140px;
+                }
+
+                @media (min-width: $screen-md-min) {
+                    height: 480px;
+                    padding-top: 140px;
+                }
+
+                @media (min-width: $screen-lg-min) {
+                    height: 480px;
+                    padding-top: 140px;
+                }
             }
         }
     }
@@ -114,9 +132,24 @@
 
         position: relative;
 
-        height: 650px;
+        height: 400px;
+        padding-top: 95px;
 
-        padding-top: 240px;
+
+        @media (min-width: $screen-sm-min) {
+            height: 500px;
+            padding-top: 180px;
+        }
+
+        @media (min-width: $screen-md-min) {
+            height: 500px;
+            padding-top: 180px;
+        }
+
+        @media (min-width: $screen-lg-min) {
+            height: 650px;
+            padding-top: 240px;
+        }
 
         &--filter{
 

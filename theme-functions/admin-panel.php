@@ -55,6 +55,20 @@ function theme_social_page()
 
 add_action("admin_menu", "add_theme_menu_item");
 
+function display_address_element()
+{
+    ?>
+    <textarea name="medica_address" id="medica_address" rows="4" cols="50"><?php echo get_option('medica_address'); ?></textarea>
+    <?php
+}
+
+function display_email_element()
+{
+    ?>
+    <input type="text" name="medica_email" id="medica_email" value="<?php echo get_option('medica_email'); ?>" />
+    <?php
+}
+
 
 function display_facebook_page()
 {

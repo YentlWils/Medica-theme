@@ -51,19 +51,27 @@
 
                         <ul class="nav navbar-nav navbar-right hidden-xs">
                             <li>
-                                <a href="#" class="navbar-link">
-                                    <span><?php _e( 'English', 'medica-theme' ); ?></span>
-                                </a>
-                            </li>
-                            <li>
                                 <a href="#menu" class="nav-menu navbar-link menu__button" data-toggle="collapse" data-target="#main-menu">
-                                    <!-- TODO: i18n -->
                                     <span class="text text-lowercase"><?php _e( 'Menu', 'medica-theme' ); ?></span>
                                     <span class="line line--one"></span>
                                     <span class="line line--two"></span>
                                 </a>
                             </li>
                         </ul>
+
+                        <?php
+                        if ( has_nav_menu( 'alternative-language' ) ) {
+                            wp_nav_menu( array(
+                                'theme_location' => 'alternative-language',
+                                'container'       => null,
+                                'menu_class' => "nav navbar-nav navbar-right hidden-xs",
+                                'link_before' => '<span>',
+                                'link_after'  => '</span>',
+                                'walker' => new Alternative_Page_Walker
+                            ) );
+                        }
+                        ?>
+
                     </div>
                 </div>
             </div>

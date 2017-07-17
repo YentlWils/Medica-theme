@@ -21,3 +21,6 @@ include "theme-functions/admin-panel.php";
 include "theme-functions/curl.php";
 
 include "theme-functions/breadcrumbs.php";
+
+include "theme-functions/menu/walker.php";
+

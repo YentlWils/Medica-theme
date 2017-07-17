@@ -20,6 +20,8 @@ function medica_theme_setup(){
 
     register_nav_menu( 'social-media', 'Social Media');
 
+    register_nav_menu( 'alternative-language', 'Site in an alternative language');
+
 
 
     register_nav_menu('secondary', 'The secondary footer navigation');

@@ -27,3 +27,24 @@ input{
     }
 }
 
+
+.medica-select{
+    display: inline-block;
+    position: relative;
+
+    select{
+        color: $beta-color;
+        border: 1px solid $alpha-color;
+        background-color: transparent;
+        border-radius: 0px;
+        appearance: none;
+        padding: 5px 25px 5px 10px;
+    }
+
+    &:after{
+        content: "\f107";
+        font-family: FontAwesome;
+        position: relative;
+        left: -22px;
+    }
+}

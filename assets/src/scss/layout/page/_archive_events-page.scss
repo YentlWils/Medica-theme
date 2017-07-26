@@ -1,0 +1,54 @@
+
+.calendar-filters{
+    label{
+        font-weight: 100;
+    }
+
+
+}
+
+.calendar-overview{
+
+    margin-top: 50px;
+
+    &__item{
+        margin-bottom: 60px;
+    }
+
+    &__title{
+        color: $beta-color;
+        font-size: 1.2em;
+        line-height: 1.3em;
+        font-weight: 500;
+        min-height: 50px;
+        margin-bottom: 15px;
+    }
+
+    &__location{
+        color: $beta-color;
+        font-weight: 500;
+
+        span{
+            &:before{
+                content: "|";
+                margin-left: 10px;
+                margin-right: 10px;
+            }
+        }
+
+        margin-bottom: 20px;
+    }
+
+    &__date{
+        color: $dark-alpha-color;
+        margin-bottom: 5px;
+    }
+
+    &__link{
+        @media (max-width: $screen-xs-max) {
+            text-align: center;
+            font-size: 1.2em;
+            margin-left: -46px;
+        }
+    }
+}

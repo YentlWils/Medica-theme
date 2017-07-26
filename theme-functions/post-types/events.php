@@ -13,7 +13,7 @@ add_action( 'init', 'create_event_postype' );
 function create_event_postype() {
 
     $labels = array(
-        'name' => _x('Events', 'post type general name'),
+        'name' => _x('Calendar', 'post type general name'),
         'singular_name' => _x('Event', 'post type singular name'),
         'add_new' => _x('Add New', 'events'),
         'add_new_item' => __('Add New Event'),
@@ -27,7 +27,7 @@ function create_event_postype() {
     );
 
     $args = array(
-        'label' => __('Events'),
+        'label' => __('Calendar'),
         'labels' => $labels,
         'public' => true,
         'can_export' => true,
@@ -37,7 +37,7 @@ function create_event_postype() {
         'capability_type' => 'post',
         'menu_icon' => "dashicons-calendar-alt",
         'hierarchical' => false,
-        'rewrite' => array( "slug" => _x("events", 'slug for the events' ,'medica-theme')),
+        'rewrite' => array( "slug" => _x("calendar", 'slug for the events' ,'medica-theme')),
         'supports'=> array('title', 'thumbnail', 'editor') ,
         'show_in_nav_menus' => true,
         "menu_position" => 6,

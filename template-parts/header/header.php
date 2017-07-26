@@ -12,7 +12,7 @@
         <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
 
 
-        <title><?php _e( 'Medica', 'medica-theme' ); ?> | <?php echo get_the_title(); ?></title>
+        <title><?php _e( 'Medica', 'medica-theme' ); ?> | <?php echo is_archive()  ? __("Kalender", "medica-theme") :get_the_title(); ?></title>
 
         <link href="<?php echo get_stylesheet_directory_uri(); ?>/assets/dist/images/assets/favicon.ico" rel="shortcut icon" type="image/x-icon">
         <link href="<?php echo get_stylesheet_directory_uri(); ?>/assets/dist/images/assets/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180">

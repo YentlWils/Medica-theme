@@ -32,15 +32,15 @@ function create_event_postype() {
         'public' => true,
         'can_export' => true,
         'show_ui' => true,
+        'has_archive' => true,
         '_builtin' => false,
         'capability_type' => 'post',
         'menu_icon' => "dashicons-calendar-alt",
         'hierarchical' => false,
-        'rewrite' => array( "slug" => "events" ),
+        'rewrite' => array( "slug" => _x("events", 'slug for the events' ,'medica-theme')),
         'supports'=> array('title', 'thumbnail', 'editor') ,
         'show_in_nav_menus' => true,
         "menu_position" => 6,
-//        'taxonomies' => array( 'tf_eventcategory', 'post_tag')
     );
 
     register_post_type( 'tf_events', $args);

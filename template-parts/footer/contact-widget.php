@@ -24,31 +24,32 @@
                     <input type="hidden" name="action" value="contact_send" />
                     <div class="row contact-widget__form-row">
                         <div class="col-sm-6 col-md-6">
-                            <input type="text" class="col-sm-12 col-md-12" name="name" placeholder="<?php _e( 'Naam', 'medica-theme' ); ?>" required=""
+                            <input type="text" class="col-xs-12 col-sm-12 col-md-12 col-centered" name="name" placeholder="<?php _e( 'Naam', 'medica-theme' ); ?>" required=""
                                    data-parsley-required-message="<?php _e('Dit veld is verplicht', 'medica-theme') ?>"/>
-                            <br class="visible-sm"/>
                         </div>
+<!--                        <br class="visible-xs"/>-->
                         <div class="col-sm-6 col-md-6">
-                            <input type="text" class="col-sm-12 col-md-12" name="firstname" placeholder="<?php _e( 'Voornaam', 'medica-theme' ); ?>" required=""
+                            <input type="text" class="col-xs-12 col-sm-12 col-md-12" name="firstname" placeholder="<?php _e( 'Voornaam', 'medica-theme' ); ?>" required=""
                                    data-parsley-required-message="<?php _e('Dit veld is verplicht', 'medica-theme') ?>"/>
                         </div>
                     </div>
+
                     <div class="row contact-widget__form-row">
                         <div class="col-md-12">
-                            <input type="email" class="col-sm-12 col-md-12" name="email" placeholder="<?php _e( 'Email', 'medica-theme' ); ?>" required=""
+                            <input type="email" class="col-xs-12 col-sm-12 col-md-12" name="email" placeholder="<?php _e( 'Email', 'medica-theme' ); ?>" required=""
                                    data-parsley-required-message="<?php _e('Dit veld is verplicht', 'medica-theme') ?>"
                                    data-parsley-type-message="<?php _e('Dit is geen correct email formaat', 'medica-theme') ?>"/>
                         </div>
                     </div>
                     <div class="row contact-widget__form-row">
-                        <div class="col-sm-6 col-md-6">
+                        <div class="col-xs-6 col-sm-6 col-md-6">
                             <div class="contact-widget__link text-left">
                                 <a href="javascript:showStep(1)"><?php _e( 'terug', 'medica-theme' ); ?></a>
                             </div>
                         </div>
-                        <div class="col-sm-6 col-md-6">
+                        <div class="col-xs-6 col-sm-6 col-md-6">
                             <div class="contact-widget__submit text-center">
-                                <input type="submit" value="<?php _e( 'verstuur', 'medica-theme' ); ?>" class="col-sm-12 col-md-12 text-lowercase"/>
+                                <input type="submit" value="<?php _e( 'verstuur', 'medica-theme' ); ?>" class="col-xs-12 col-sm-12 col-md-12 text-lowercase"/>
                             </div>
                         </div>
                     </div>

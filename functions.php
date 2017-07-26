@@ -25,3 +25,5 @@ include "theme-functions/breadcrumbs.php";
 include "theme-functions/menu/walker.php";
 
 include "theme-functions/query-params/events.php";
+
+include "theme-functions/ajax/widget-submit.php";

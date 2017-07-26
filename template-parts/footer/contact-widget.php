@@ -19,7 +19,7 @@
             <div class="contact-widget__content text-center">
                 <div class="contact-widget__title text-uppercase"><?php _e( 'Vul hier aan', 'medica-theme' ); ?></div>
                 <div class="contact-widget__sub-title text-uppercase"><?php _e( 'Wij brengen je op de hoogte', 'medica-theme' ); ?></div>
-                <div class="contact-widget__form">
+                <form class="contact-widget__form">
                     <div class="row contact-widget__form-row">
                         <div class="col-sm-6 col-md-6">
                             <input type="text" class="col-sm-12 col-md-12" name="name" placeholder="<?php _e( 'Naam', 'medica-theme' ); ?>"/>
@@ -46,7 +46,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </form>
             </div>
         </div>
     </div>

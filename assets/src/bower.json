@@ -15,7 +15,8 @@
     "jquery": "^3.2.1",
     "bootstrap": "^3.3.7",
     "owl.carousel": "^2.2.1",
-    "jquery-ui": "^1.12.1"
+    "jquery-ui": "^1.12.1",
+    "parsleyjs": "^2.7.2"
   },
   "install": {
     "path": {
@@ -32,6 +33,9 @@
       "otf": "fonts/vendor"
     },
     "sources": {
+      "parsleyjs": [
+        "bower_components/parsleyjs/dist/parsley.min.js"
+      ],
       "owl.carousel": [
         "bower_components/owl.carousel/dist/owl.carousel.min.js",
         "bower_components/owl.carousel/dist/assets/owl.carousel.min.css",

@@ -30,7 +30,7 @@
                         $url = $custom["tf_sponsors_url"][0];
 
                 ?>
-                        <a href="<?php echo $url; ?>">
+                        <a href="<?php echo $url; ?>" target="_blank">
                             <img class="footer__banner" src="<?php echo the_post_thumbnail_url( 'full' ) ?>" alt="<?php the_title() ?>"/>
                         </a>
                 <?php

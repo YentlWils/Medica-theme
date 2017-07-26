@@ -38,7 +38,7 @@ if ($regularSponsors):
 
                 ?>
                     <div class="col-xs-6 col-sm-3 col-md-3 sponsor-widget text-center <?php echo $paddingClass ?>">
-                        <a href="<?php echo $url; ?>" class="sponsor-widget__link">
+                        <a href="<?php echo $url; ?>" class="sponsor-widget__link" target="_blank">
                             <img class="sponsor-widget__img" src="<?php echo the_post_thumbnail_url( 'large' ) ?>" alt="<?php the_title(); ?>" />
                         </a>
                     </div>

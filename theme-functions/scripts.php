@@ -28,7 +28,7 @@ function medica_scrip_enqueue(){
     wp_enqueue_script('Owl carousel', get_template_directory_uri() . '/assets/dist/js/vendor/owl.carousel/owl.carousel.min.js', array(), '2.2.1', true);
     wp_enqueue_script('parsleyjs Plugin', get_template_directory_uri() . '/assets/dist/js/vendor/parsleyjs/parsley.min.js', array(), '2.7.2', true);
     wp_enqueue_script('parallax Plugin', get_template_directory_uri() . '/assets/dist/js/medica/plugin/parallax.js', array(), '1.0.0', true);
-    wp_enqueue_script("custom js", get_template_directory_uri() . "/assets/dist/js/medica.js", array(), "1.0.0", true);
+    wp_enqueue_script("custom js", get_template_directory_uri() . "/assets/dist/js/medica.js", array(), "1.0.1", true);
 
 }
 
@@ -37,6 +37,9 @@ add_action( 'wp_enqueue_scripts', 'medica_scrip_enqueue' );
 
 // Update CSS within in Admin
 function admin_scrip_enqueue() {
+
+    wp_enqueue_media();
+
     wp_enqueue_style('jquery-ui', get_template_directory_uri().'/assets/dist/css/vendor/jquery-ui/jquery-ui.min.css', array(), '1.12.1', "all");
     wp_enqueue_style('font-awesome', get_template_directory_uri() . '/assets/dist/css/vendor-overrides/font-awesome/font-awesome.css', array(), '4.5.0', 'all');
     wp_enqueue_style('admin-styles', get_template_directory_uri().'/assets/dist/css/admin.css', array(), "1.0.0", "all");

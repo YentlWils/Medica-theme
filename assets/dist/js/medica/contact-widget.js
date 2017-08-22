@@ -9,39 +9,42 @@ function showStep(stepNumber) {
   nextStep.addClass(activeClass);
 }
 
-$('#contact-form__widget').parsley().on('field:validated', function () {
-  var ok = $('.parsley-error').length === 0;
-  $('.bs-callout-info').toggleClass('hidden', !ok);
-  $('.bs-callout-warning').toggleClass('hidden', ok);
-}).on('form:submit', function () {
-  if (is_sending) {
-    return false;
-  }
+if ($('#contact-form__widget').length > 0) {
 
-  var form = $('#contact-form__widget');
-  $.ajax({
-    url: form.attr('action'),
-    type: 'post',
-    dataType: 'JSON',
-    data: form.serialize(),
-    beforeSend: function beforeSend() {
-      is_sending = true;
-    },
-    error: handleFormError,
-    success: function success(data) {
-      if (data.status === 'success') {
-
-        showStep(3);
-      } else {
-        handleFormError();
-      }
+  $('#contact-form__widget').parsley().on('field:validated', function () {
+    var ok = $('.parsley-error').length === 0;
+    $('.bs-callout-info').toggleClass('hidden', !ok);
+    $('.bs-callout-warning').toggleClass('hidden', ok);
+  }).on('form:submit', function () {
+    if (is_sending) {
+      return false;
     }
+
+    var form = $('#contact-form__widget');
+    $.ajax({
+      url: form.attr('action'),
+      type: 'post',
+      dataType: 'JSON',
+      data: form.serialize(),
+      beforeSend: function beforeSend() {
+        is_sending = true;
+      },
+      error: handleFormError,
+      success: function success(data) {
+        if (data.status === 'success') {
+
+          showStep(3);
+        } else {
+          handleFormError();
+        }
+      }
+    });
+
+    function handleFormError() {
+      is_sending = false;
+      showStep(4);
+    }
+
+    return false;
   });
-
-  function handleFormError() {
-    is_sending = false;
-    showStep(4);
-  }
-
-  return false;
-});
+}

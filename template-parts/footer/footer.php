@@ -42,7 +42,7 @@
             <div class="col-sm-3 col-md-2 text-left hidden-xs">
                 <br class="visible-sm"/>
                 <p><?php _e( 'Ook adverteren?', 'medica-theme' ); ?></p>
-                <a href="#"><?php _e( 'contacteer ons', 'medica-theme' ); ?></a>
+                <a href="mailto:<?php echo get_option('medica_email_advert'); ?>"><?php _e( 'contacteer ons', 'medica-theme' ); ?></a>
             </div>
             <div class="col-sm-12 col-md-2 text-right hidden-xs">
                 <br class="hidden-sm"/>

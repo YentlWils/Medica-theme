@@ -8,7 +8,7 @@
 
 function rewrite_event_url() {
     add_rewrite_rule(
-        'calendar/(\d{2})/(\d{4})/?',
+        _x("calendar", 'slug for the events' ,'medica-theme').'/(\d{2})/(\d{4})/?',
         'index.php?post_type=tf_events&event_month=$matches[1]&event_year=$matches[2]',
         'top'
     );

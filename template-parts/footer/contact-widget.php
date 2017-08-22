@@ -3,9 +3,13 @@
     <div class="contact-widget__section  contact-widget__section--active" id="contact-widget--sep-1">
         <div class="contact-widget__table">
             <div class="contact-widget__content text-center">
-                <div class="contact-widget__title text-uppercase"><?php _e("Doc's bar feestje", 'medica-theme')?></div>
-                <div class="contact-widget__sub-title text-uppercase"><?php _e("donderdag vanaf 19:00", 'medica-theme')?></div>
-                <div class="contact-widget__highlight"><?php _e("11-11-2017", 'medica-theme')?></div>
+                <div class="contact-widget__title text-uppercase"><?php echo get_option('form_front_title'); ?></div>
+                <?php if (strlen(get_option('form_front_subtitle')) > 0 ){ ?>
+                    <div class="contact-widget__sub-title text-uppercase"><?php echo get_option('form_front_subtitle'); ?></div>
+                <?php } ?>
+                <?php if (strlen(get_option('form_front_highlight')) > 0 ){ ?>
+                    <div class="contact-widget__highlight"><?php echo get_option('form_front_highlight'); ?></div>
+                <?php } ?>
                 <?php if(get_option('form_gen_active') === "true"){ ?>
                     <div class="contact-widget__link">
                         <a href="javascript:showStep(2)"><?php _e("zin om te komen tappen/draaien?", 'medica-theme')?></a>
@@ -23,7 +27,7 @@
                     <div class="contact-widget__title text-uppercase"><?php _e( 'Vul hier aan', 'medica-theme' ); ?></div>
                     <div class="contact-widget__sub-title text-uppercase"><?php _e( 'Wij brengen je op de hoogte', 'medica-theme' ); ?></div>
                     <form class="contact-widget__form" id="contact-form__widget" action="<?php echo admin_url("admin-ajax.php") ?>">
-                        <input type="hidden" name="subject" value="Doc's bar feestje"/>
+                        <input type="hidden" name="subject" value="<?php echo get_option('form_email_subject'); ?>"/>
                         <input type="hidden" name="action" value="contact_send" />
                         <div class="row contact-widget__form-row">
                             <div class="col-sm-6 col-md-6">

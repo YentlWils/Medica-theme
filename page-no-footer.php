@@ -1,7 +1,10 @@
 <?php
 
 /*
-    Template Name: Content page without footer
+    Template Name: Content page without footer [Page Template]
+    Template Post Type: page
+    @package WordPress
+    @subpackage Medica_theme
 */
 
 get_header();

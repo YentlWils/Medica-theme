@@ -159,6 +159,41 @@ function upload_form_image_metabox() {
 
 }
 
+function display_form_title()
+{
+    ?>
+    <input type="text" name="form_front_title" id="form_gen_title" value="<?php echo get_option('form_front_title'); ?>" size="100"/>
+    <?php
+}
+
+function display_form_subtitle()
+{
+    ?>
+    <input type="text" name="form_front_subtitle" id="form_gen_subtitle" value="<?php echo get_option('form_front_subtitle'); ?>" size="100"/>
+    <?php
+}
+
+function display_form_highlight()
+{
+    ?>
+    <input type="text" name="form_front_highlight" id="form_gen_highlight" value="<?php echo get_option('form_front_highlight'); ?>" size="100"/>
+    <?php
+}
+
+function display_form_email_subject()
+{
+    ?>
+    <input type="text" name="form_email_subject" id="form_email_subject" value="<?php echo get_option('form_email_subject'); ?>" size="100"/>
+    <?php
+}
+
+function display_form_email_address()
+{
+    ?>
+    <input type="text" name="form_email_address" id="form_email_address" value="<?php echo get_option('form_email_address'); ?>" size="100"/>
+    <?php
+}
+
 function display_theme_panel_fields()
 {
     // General settings
@@ -190,11 +225,19 @@ function display_theme_panel_fields()
     register_setting("section-form-widget", "form_gen_active");
     register_setting("section-form-widget", "form_gen_img");
 
-//    add_settings_section("section-front", "Form Frontpage", null, "theme-form-widget");
-//    add_settings_field("fb_page", "Facebook Page Name", "display_facebook_page", "theme-form-widget", "section-front");
-//    add_settings_field("fb_token", "Facebook Access Token", "display_facebook_token", "theme-form-widget", "section-front");
-//    register_setting("section-form-widget", "fb_page");
-//    register_setting("section-form-widget", "fb_token");
+    add_settings_section("section-front", "Widget Frontpage", null, "theme-form-widget");
+    add_settings_field("form_front_title", "Form Title", "display_form_title", "theme-form-widget", "section-front");
+    add_settings_field("form_front_subtitle", "Form Subtitle", "display_form_subtitle", "theme-form-widget", "section-front");
+    add_settings_field("form_front_highlight", "Form Highlight", "display_form_highlight", "theme-form-widget", "section-front");
+    register_setting("section-form-widget", "form_front_title");
+    register_setting("section-form-widget", "form_front_subtitle");
+    register_setting("section-form-widget", "form_front_highlight");
+
+    add_settings_section("section-email", "Widget Email", null, "theme-form-widget");
+    add_settings_field("form_email_address", "Email address", "display_form_email_address", "theme-form-widget", "section-email");
+    add_settings_field("form_email_subject", "Email subject", "display_form_email_subject", "theme-form-widget", "section-email");
+    register_setting("section-form-widget", "form_email_address");
+    register_setting("section-form-widget", "form_email_subject");
 
 
 

@@ -1,7 +1,10 @@
 <?php
 
 /*
-    Template Name: Home Page template
+    Template Name: Home Page template [Page Template]
+    Template Text Type: page
+    @package WordPress
+    @subpackage Medica_theme
 */
 
 get_header();

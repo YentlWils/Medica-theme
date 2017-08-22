@@ -1,7 +1,10 @@
 <?php
 
 /*
-    Template Name: Minimal content page
+    Template Name: Minimal content page [Page Template]
+    Template Post Type: page
+    @package WordPress
+    @subpackage Medica_theme
 */
 
 get_header("minimal");

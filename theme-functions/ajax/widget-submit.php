@@ -15,10 +15,11 @@ function sendContactFormToSiteAdmin () {
             throw new Exception('Email address not formatted correctly.');
         }
 
-        $headers = 'From: Medica Website <'. get_option('medica_email') .'>';
-        $send_to = "contact@medica.be";
+        $headers[] = 'From: Medica Website <no-reply@medica.be>';
+        $headers[] = 'Reply-to: ' . $_POST['name'] .' '.$_POST['firstname'] . ' <'. $_POST['email'] .'>';
+        $send_to = get_option('form_email_address');
         $subject = 'Zoekertje komen draaien/tappen: '. $_POST['subject'] .' - '.$_POST['name'] .' '.$_POST['firstname'];
-        $message = "Reactie van ".$_POST['name']." ". $_POST['firstname'] . " \n\n Stuur terug naar to: " . $_POST['email'];
+        $message = "Reactie van ".$_POST['name']." ". $_POST['firstname'] . " \n\n Stuur terug naar : " . $_POST['email'];
 
         if (wp_mail($send_to, $subject, $message, $headers)) {
             echo json_encode(array('status' => 'success', 'message' => 'Contact message sent.'));

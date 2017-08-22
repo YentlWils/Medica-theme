@@ -78,86 +78,74 @@ msgid "Er werden geen geplande evenementen gevonden voor deze maand"
 msgstr ""
 
 #: ../../page-home.php:2
-msgid "Home Page template"
+msgid "Home Page template [Page Template]"
 msgstr ""
 
 #: ../../page-minimal-content.php:2
-msgid "Minimal content page"
+msgid "Minimal content page [Page Template]"
 msgstr ""
 
 #: ../../page-no-footer.php:2
-msgid "Content page without footer"
+msgid "Content page without footer [Page Template]"
 msgstr ""
 
 #: ../../page-no-header.php:2
-msgid "Content page without header"
+msgid "Content page without header [Page Template]"
 msgstr ""
 
-#: ../../template-parts/footer/contact-widget.php:6
-msgid "Doc's bar feestje"
-msgstr ""
-
-#: ../../template-parts/footer/contact-widget.php:7
-msgid "donderdag vanaf 19:00"
-msgstr ""
-
-#: ../../template-parts/footer/contact-widget.php:8
-msgid "11-11-2017"
-msgstr ""
-
-#: ../../template-parts/footer/contact-widget.php:10
+#: ../../template-parts/footer/contact-widget.php:15
 msgid "zin om te komen tappen/draaien?"
 msgstr ""
 
-#: ../../template-parts/footer/contact-widget.php:20
+#: ../../template-parts/footer/contact-widget.php:27
 msgid "Vul hier aan"
 msgstr ""
 
-#: ../../template-parts/footer/contact-widget.php:21
+#: ../../template-parts/footer/contact-widget.php:28
 msgid "Wij brengen je op de hoogte"
 msgstr ""
 
-#: ../../template-parts/footer/contact-widget.php:27
+#: ../../template-parts/footer/contact-widget.php:34
 msgid "Naam"
 msgstr ""
 
-#: ../../template-parts/footer/contact-widget.php:28, ../../template-parts/footer/contact-widget.php:33, ../../template-parts/footer/contact-widget.php:40
+#: ../../template-parts/footer/contact-widget.php:35, ../../template-parts/footer/contact-widget.php:40, ../../template-parts/footer/contact-widget.php:47
 msgid "Dit veld is verplicht"
 msgstr ""
 
-#: ../../template-parts/footer/contact-widget.php:32
+#: ../../template-parts/footer/contact-widget.php:39
 msgid "Voornaam"
 msgstr ""
 
-#: ../../template-parts/footer/contact-widget.php:39
+#: ../../template-parts/footer/contact-widget.php:46
 msgid "Email"
 msgstr ""
 
-#: ../../template-parts/footer/contact-widget.php:41
+#: ../../template-parts/footer/contact-widget.php:48
 msgid "Dit is geen correct email formaat"
 msgstr ""
 
-#: ../../template-parts/footer/contact-widget.php:47, ../../template-parts/footer/contact-widget.php:81
+#: ../../template-parts/footer/contact-widget.php:54, ../../template-parts/footer/contact-widget.php:88
 msgid "terug"
 msgstr ""
 
-#: ../../template-parts/footer/contact-widget.php:52
+#: ../../template-parts/footer/contact-widget.php:59
 msgid "verstuur"
 msgstr ""
 
-#: ../../template-parts/footer/contact-widget.php:65
+#: ../../template-parts/footer/contact-widget.php:72
 msgid "Bedankt!"
 msgstr ""
 
-#: ../../template-parts/footer/contact-widget.php:66
+#: ../../template-parts/footer/contact-widget.php:73
 msgid "we brengen je op de hoogte"
 msgstr ""
 
-#: ../../template-parts/footer/contact-widget.php:75
+#: ../../template-parts/footer/contact-widget.php:82
 msgid "Oeps! Er is iet mis gelopen..."
 msgstr ""
 
-#: ../../template-parts/footer/contact-widget.php:76
+#: ../../template-parts/footer/contact-widget.php:83
 msgid "Probeer het even opniew"
 msgstr ""
 
@@ -210,7 +198,7 @@ msgstr ""
 msgid "Calendar"
 msgstr ""
 
-#: ../../theme-functions/post-types/events.php:40
+#: ../../theme-functions/post-types/events.php:40, ../../theme-functions/query-params/events.php:11
 msgctxt "slug for the events"
 msgid "calendar"
 msgstr ""

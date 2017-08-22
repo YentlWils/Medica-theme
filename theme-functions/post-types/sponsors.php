@@ -38,7 +38,7 @@ function create_sponsors_postype() {
         'hierarchical' => false,
         'rewrite' => array( "slug" => "sponsors"),
         'supports'=> array('title', 'thumbnail') ,
-        'show_in_nav_menus' => true,
+        'show_in_nav_menus' => false,
         "menu_position" => 99,
     );
 

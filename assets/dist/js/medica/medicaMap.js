@@ -199,6 +199,8 @@ function initMap() {
       type: 'poly'
     };
 
+    var bounds = new google.maps.LatLngBounds();
+
     var i = 0;
 
     _.forEach(medicaMarkers, function (value, key) {
@@ -211,12 +213,12 @@ function initMap() {
         shape: shape,
         title: key
       });
+
+      var myLatLng = new google.maps.LatLng(value.lat, value.lng);
+      bounds.extend(myLatLng);
     });
 
-    var center = new google.maps.LatLng(medicaMarkers[Object.keys(medicaMarkers)[0]].lat, medicaMarkers[Object.keys(medicaMarkers)[0]].lng);
-
-    map.setCenter(center);
-    map.setZoom(15);
+    map.fitBounds(bounds);
   }
 };
 

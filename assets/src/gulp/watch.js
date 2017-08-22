@@ -7,6 +7,8 @@ module.exports.watch = (gulp, plugins, config) => {
 
   return () => {
 
+    // gulp.watch([ config.PHPSrc ], [ 'generatePOTFiles' ]);
+
     gulp.watch([ config.styleSrc + '/**/*.scss' ], [ 'sass' ]);
 
     gulp.watch([ config.jsSrc + '/**/*.js' ], ['babel', 'flowTypeStatus']);

@@ -10,6 +10,13 @@ let gulp    = require('gulp');
 let config = require('./gulp/config');
 
 
+/*******************
+ * POT files tasks
+ *******************/
+// Copy font files to releases folder
+gulp.task('generatePOTFiles', require('./gulp/pot').generatePOTFiles(gulp, plugins, config));
+
+
 /**************
  * Copy tasks
  **************/
@@ -76,6 +83,8 @@ gulp.task('watch', require('./gulp/watch').watch(gulp, plugins, config));
  * Run browser-sync and start watching for file changes
  */
 gulp.task('_default', [ 'watch']);
+
+gulp.task('_generatePOTFiles', [ 'generatePOTFiles']);
 
 gulp.task('_clientLibs', [ 'clientLibs' ]);
 

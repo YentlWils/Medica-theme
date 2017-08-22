@@ -1,0 +1,229 @@
+# Copyright (C) 2017 Medica Website
+# This file is distributed under the same license as the Medica Website package.
+msgid ""
+msgstr ""
+"Project-Id-Version: Medica Website\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-KeywordsList: __;_e;_ex:1,2c;_n:1,2;_n_noop:1,2;_nx:1,2,4c;_nx_noop:1,2,3c;_x:1,2c;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../../archive-tf_events.php:18, ../../template-parts/header/header.php:15
+msgid "Kalender"
+msgstr ""
+
+#: ../../archive-tf_events.php:31
+msgid "Kies een maand"
+msgstr ""
+
+#: ../../archive-tf_events.php:34
+msgid "January"
+msgstr ""
+
+#: ../../archive-tf_events.php:35
+msgid "February"
+msgstr ""
+
+#: ../../archive-tf_events.php:36
+msgid "March"
+msgstr ""
+
+#: ../../archive-tf_events.php:37
+msgid "April"
+msgstr ""
+
+#: ../../archive-tf_events.php:38
+msgid "May"
+msgstr ""
+
+#: ../../archive-tf_events.php:39
+msgid "June"
+msgstr ""
+
+#: ../../archive-tf_events.php:40
+msgid "July"
+msgstr ""
+
+#: ../../archive-tf_events.php:41
+msgid "August"
+msgstr ""
+
+#: ../../archive-tf_events.php:42
+msgid "September"
+msgstr ""
+
+#: ../../archive-tf_events.php:43
+msgid "October"
+msgstr ""
+
+#: ../../archive-tf_events.php:44
+msgid "November"
+msgstr ""
+
+#: ../../archive-tf_events.php:45
+msgid "December"
+msgstr ""
+
+#: ../../archive-tf_events.php:100, ../../template-parts/footer/calendar-widget.php:70, ../../template-parts/header/carousel.php:41
+msgid "ontdek meer"
+msgstr ""
+
+#: ../../archive-tf_events.php:115
+msgid "Er werden geen geplande evenementen gevonden voor deze maand"
+msgstr ""
+
+#: ../../page-home.php:2
+msgid "Home Page template"
+msgstr ""
+
+#: ../../page-minimal-content.php:2
+msgid "Minimal content page"
+msgstr ""
+
+#: ../../page-no-footer.php:2
+msgid "Content page without footer"
+msgstr ""
+
+#: ../../page-no-header.php:2
+msgid "Content page without header"
+msgstr ""
+
+#: ../../template-parts/footer/contact-widget.php:6
+msgid "Doc's bar feestje"
+msgstr ""
+
+#: ../../template-parts/footer/contact-widget.php:7
+msgid "donderdag vanaf 19:00"
+msgstr ""
+
+#: ../../template-parts/footer/contact-widget.php:8
+msgid "11-11-2017"
+msgstr ""
+
+#: ../../template-parts/footer/contact-widget.php:10
+msgid "zin om te komen tappen/draaien?"
+msgstr ""
+
+#: ../../template-parts/footer/contact-widget.php:20
+msgid "Vul hier aan"
+msgstr ""
+
+#: ../../template-parts/footer/contact-widget.php:21
+msgid "Wij brengen je op de hoogte"
+msgstr ""
+
+#: ../../template-parts/footer/contact-widget.php:27
+msgid "Naam"
+msgstr ""
+
+#: ../../template-parts/footer/contact-widget.php:28, ../../template-parts/footer/contact-widget.php:33, ../../template-parts/footer/contact-widget.php:40
+msgid "Dit veld is verplicht"
+msgstr ""
+
+#: ../../template-parts/footer/contact-widget.php:32
+msgid "Voornaam"
+msgstr ""
+
+#: ../../template-parts/footer/contact-widget.php:39
+msgid "Email"
+msgstr ""
+
+#: ../../template-parts/footer/contact-widget.php:41
+msgid "Dit is geen correct email formaat"
+msgstr ""
+
+#: ../../template-parts/footer/contact-widget.php:47, ../../template-parts/footer/contact-widget.php:81
+msgid "terug"
+msgstr ""
+
+#: ../../template-parts/footer/contact-widget.php:52
+msgid "verstuur"
+msgstr ""
+
+#: ../../template-parts/footer/contact-widget.php:65
+msgid "Bedankt!"
+msgstr ""
+
+#: ../../template-parts/footer/contact-widget.php:66
+msgid "we brengen je op de hoogte"
+msgstr ""
+
+#: ../../template-parts/footer/contact-widget.php:75
+msgid "Oeps! Er is iet mis gelopen..."
+msgstr ""
+
+#: ../../template-parts/footer/contact-widget.php:76
+msgid "Probeer het even opniew"
+msgstr ""
+
+#: ../../template-parts/footer/facebook-widget.php:51
+msgid "om"
+msgstr ""
+
+#: ../../template-parts/footer/facebook-widget.php:60
+msgid "Ontdek meer op onze facebook"
+msgstr ""
+
+#: ../../template-parts/footer/facebook-widget.php:63
+msgid "Ga naar onze facebook"
+msgstr ""
+
+#: ../../template-parts/footer/footer.php:44
+msgid "Ook adverteren?"
+msgstr ""
+
+#: ../../template-parts/footer/footer.php:45
+msgid "contacteer ons"
+msgstr ""
+
+#: ../../template-parts/footer/instagram-widget.php:42
+msgid "Ontdek meer op onze instagram"
+msgstr ""
+
+#: ../../template-parts/footer/instagram-widget.php:45
+msgid "Ga naar onze instagram"
+msgstr ""
+
+#: ../../template-parts/footer/map-widget.php:71
+msgid "plan route"
+msgstr ""
+
+#: ../../template-parts/header/header.php:15
+msgid "Medica"
+msgstr ""
+
+#: ../../template-parts/header/header.php:55
+msgid "Menu"
+msgstr ""
+
+#: ../../theme-functions/post-types/events.php:16
+msgctxt "post type general name"
+msgid "Calendar"
+msgstr ""
+
+#: ../../theme-functions/post-types/events.php:30
+msgid "Calendar"
+msgstr ""
+
+#: ../../theme-functions/post-types/events.php:40
+msgctxt "slug for the events"
+msgid "calendar"
+msgstr ""
+
+#: ../../theme-functions/post-types/slider.php:39
+msgctxt "slug for the highlight slider"
+msgid "s"
+msgstr ""
+
+#: ../../theme-functions/post-types/sponsors.php:80, ../../theme-functions/post-types/sponsors.php:126
+msgid "yes"
+msgstr ""
+
+#: ../../theme-functions/post-types/sponsors.php:80, ../../theme-functions/post-types/sponsors.php:127
+msgid "no"
+msgstr ""

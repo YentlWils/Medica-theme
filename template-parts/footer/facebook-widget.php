@@ -43,7 +43,9 @@ $profileUrl = "https://www.facebook.com/" . $page_name . "/";
                 $post->message =  preg_replace($reg_exUrl, "<a href=".$url[0].">" .$url[0] ."</a> ", $post->message);
             }
 
-            $date = new DateTime($fb_post->created_time);
+            $tz = new DateTimeZone('Europe/Brussels');
+            $date = new DateTime($fb_post->created_time, $tz);
+            $date->add(new DateInterval('PT2H'));
 
             ?>
             <div class="social-media-widget__date text-lowercase"><?php echo date_i18n("D, j F Y", $date->getTimestamp()) . " " . __("om",'medica-theme') . " " . date_i18n("H:i", $date->getTimestamp()); ?> </div>

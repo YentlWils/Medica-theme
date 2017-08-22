@@ -29,6 +29,11 @@ function medica_theme_setup(){
 
 add_action('init', 'medica_theme_setup');
 
+function language_setup(){
+    load_theme_textdomain( 'medica-theme', get_template_directory() . '/languages' );
+}
+add_action( 'after_setup_theme', 'language_setup' );
+
 /**
  * ==========================================
  * Enable default functionality

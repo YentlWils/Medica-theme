@@ -8,7 +8,7 @@
 
 
 $attr = array(
-    'limit' => '2'
+    'limit' => '4'
 );
 
 $poi = getPoi($attr);
@@ -31,6 +31,8 @@ if ($poi):
     <?php
 
     $index = 1;
+    $widthCol = 12 / count($poi);
+
     foreach ($poi as $post):
         setup_postdata($post);
 
@@ -44,17 +46,19 @@ if ($poi):
 
         $activeClass = $index == 1 ?"medica-map__poi--active" : "";
 
-        if($index % 2 == 0){
+        if($index == count($poi)){
             $paddingClass = "no-padding--left";
-        }else {
+        }else if ($index == 1){
             $paddingClass = "no-padding--right";
+        }else{
+            $paddingClass = "no-padding--left no-padding--right";
         }
 
         $index++;
 
         ?>
 
-        <div class="col-md-6 <?php echo $paddingClass ?>">
+        <div class="col-md-<?php echo $widthCol; ?> <?php echo $paddingClass ?>">
             <script type="application/javascript">
                 medicaMarkers["<?php echo $post->post_name ?>"] = {
                     lat: <?php echo $lat; ?>,

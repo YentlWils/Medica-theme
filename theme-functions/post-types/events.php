@@ -13,7 +13,7 @@ add_action( 'init', 'create_event_postype' );
 function create_event_postype() {
 
     $labels = array(
-        'name' => _x('Calendar', 'post type general name'),
+        'name' => _x('Calendar', 'post type general name', 'medica-theme'),
         'singular_name' => _x('Event', 'post type singular name'),
         'add_new' => _x('Add New', 'events'),
         'add_new_item' => __('Add New Event'),
@@ -27,7 +27,7 @@ function create_event_postype() {
     );
 
     $args = array(
-        'label' => __('Calendar'),
+        'label' => __('Calendar','medica-theme'),
         'labels' => $labels,
         'public' => true,
         'can_export' => true,

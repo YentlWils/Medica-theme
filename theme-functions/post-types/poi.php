@@ -38,7 +38,7 @@ function create_poi_postype() {
         'hierarchical' => false,
         'rewrite' => array( "slug" => "poi"),
         'supports'=> array('title') ,
-        'show_in_nav_menus' => true,
+        'show_in_nav_menus' => false,
         "menu_position" => 6,
     );
 

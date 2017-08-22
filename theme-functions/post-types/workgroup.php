@@ -38,7 +38,7 @@ function create_workgroup_postype() {
         'hierarchical' => false,
         'rewrite' => array( "slug" => "workgroup"),
         'supports'=> array('title', 'editor') ,
-        'show_in_nav_menus' => true,
+        'show_in_nav_menus' => false,
         "menu_position" => 6,
     );
 

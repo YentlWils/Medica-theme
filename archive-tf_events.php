@@ -112,7 +112,7 @@
                                 else:
                                     ?>
                                         <p>
-                                            <?php _e('Er werden geen geplande evenementen gevonden voor deze maand'); ?>
+                                            <?php _e('Er werden geen geplande evenementen gevonden voor deze maand', 'medica-theme'); ?>
                                         </p>
                                     <?php
                                 endif;

@@ -6,6 +6,9 @@
 let config = {};
 config.supportedBrowsers = ['last 4 versions'];
 
+config.PHPSrc = "../../**/*.php";
+config.PHPLanguageDest = "../../languages/";
+
 config.styleSrc  = 'scss';
 config.styleDest = '../dist/css';
 

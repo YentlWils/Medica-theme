@@ -36,7 +36,7 @@ function create_slider_postype() {
         'capability_type' => 'post',
         'menu_icon' => "dashicons-images-alt2",
         'hierarchical' => false,
-        'rewrite' => array( "slug" => _x('highlights', 'slug for the highlight slider', 'medica-theme')),
+        'rewrite' => array( "slug" => _x('s', 'slug for the highlight slider', 'medica-theme')),
         'supports'=> array('title', 'thumbnail', 'editor') ,
         'show_in_nav_menus' => true,
         "menu_position" => 6,

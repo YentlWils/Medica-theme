@@ -165,8 +165,12 @@ msgstr ""
 msgid "Ook adverteren?"
 msgstr ""
 
-#: ../../template-parts/footer/footer.php:45
+#: ../../template-parts/footer/footer.php:44
 msgid "contacteer ons"
+msgstr ""
+
+#: ../../template-parts/footer/footer.php:48
+msgid "Reacties op inhoud:"
 msgstr ""
 
 #: ../../template-parts/footer/instagram-widget.php:42
@@ -208,10 +212,10 @@ msgctxt "slug for the highlight slider"
 msgid "s"
 msgstr ""
 
-#: ../../theme-functions/post-types/sponsors.php:80, ../../theme-functions/post-types/sponsors.php:126
+#: ../../theme-functions/post-types/sponsors.php:90, ../../theme-functions/post-types/sponsors.php:136
 msgid "yes"
 msgstr ""
 
-#: ../../theme-functions/post-types/sponsors.php:80, ../../theme-functions/post-types/sponsors.php:127
+#: ../../theme-functions/post-types/sponsors.php:90, ../../theme-functions/post-types/sponsors.php:137
 msgid "no"
 msgstr ""

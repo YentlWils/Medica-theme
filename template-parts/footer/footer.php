@@ -41,8 +41,12 @@
             </div>
             <div class="col-sm-3 col-md-2 text-left hidden-xs">
                 <br class="visible-sm"/>
-                <p><?php _e( 'Ook adverteren?', 'medica-theme' ); ?></p>
-                <a href="mailto:<?php echo get_option('medica_email_advert'); ?>"><?php _e( 'contacteer ons', 'medica-theme' ); ?></a>
+                <p><?php _e( 'Ook adverteren?', 'medica-theme' ); ?> <a href="mailto:<?php echo get_option('medica_email_advert'); ?>"><?php _e( 'contacteer ons', 'medica-theme' ); ?></a></p>
+
+                <br/>
+                <br/>
+                <p><small><?php _e( 'Reacties op inhoud:', 'medica-theme' ); ?> <a href="mailto:<?php echo get_option('medica_email_content'); ?>"><?php echo get_option('medica_email_content'); ?></a></small></p>
+
             </div>
             <div class="col-sm-12 col-md-2 text-right hidden-xs">
                 <br class="hidden-sm"/>

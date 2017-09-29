@@ -96,6 +96,13 @@ function display_email_advert_element()
     <?php
 }
 
+function display_email_content_element()
+{
+    ?>
+    <input type="text" name="medica_email_content" id="medica_email_content" value="<?php echo get_option('medica_email_content'); ?>" />
+    <?php
+}
+
 
 function display_facebook_page()
 {
@@ -202,6 +209,8 @@ function display_theme_panel_fields()
     register_setting("section-options", "medica_email");
     add_settings_field("medica_email_advert", "Medica email adverteren", "display_email_advert_element", "theme-options", "section-options");
     register_setting("section-options", "medica_email_advert");
+    add_settings_field("medica_email_content", "Medica email content", "display_email_content_element", "theme-options", "section-options");
+    register_setting("section-options", "medica_email_content");
     add_settings_field("medica_address", "Main Address", "display_address_element", "theme-options", "section-options");
     register_setting("section-options", "medica_address");
 

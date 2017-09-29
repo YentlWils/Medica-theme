@@ -40,6 +40,16 @@ function create_workgroup_postype() {
         'supports'=> array('title', 'editor') ,
         'show_in_nav_menus' => false,
         "menu_position" => 6,
+        'capabilities' => array(
+            'edit_post' => 'edit_workgroup',
+            'edit_posts' => 'edit_workgroups',
+            'edit_others_posts' => 'edit_other_workgroups',
+            'publish_posts' => 'publish_workgroups',
+            'read_post' => 'read_workgroup',
+            'read_private_posts' => 'read_private_workgroups',
+            'delete_post' => 'delete_workgroup'
+        ),
+        'map_meta_cap' => true
     );
 
     register_post_type( 'tf_workgroup', $args);

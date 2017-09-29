@@ -40,6 +40,16 @@ function create_slider_postype() {
         'supports'=> array('title', 'thumbnail', 'editor') ,
         'show_in_nav_menus' => true,
         "menu_position" => 6,
+        'capabilities' => array(
+            'edit_post' => 'edit_slide',
+            'edit_posts' => 'edit_slides',
+            'edit_others_posts' => 'edit_other_slides',
+            'publish_posts' => 'publish_slides',
+            'read_post' => 'read_slide',
+            'read_private_posts' => 'read_private_slides',
+            'delete_post' => 'delete_slide'
+        ),
+        'map_meta_cap' => true
     );
 
     register_post_type( 'tf_slider', $args);

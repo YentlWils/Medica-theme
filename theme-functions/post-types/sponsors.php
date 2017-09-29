@@ -40,6 +40,16 @@ function create_sponsors_postype() {
         'supports'=> array('title', 'thumbnail') ,
         'show_in_nav_menus' => false,
         "menu_position" => 99,
+        'capabilities' => array(
+            'edit_post' => 'edit_sponsor',
+            'edit_posts' => 'edit_sponsors',
+            'edit_others_posts' => 'edit_other_sponsors',
+            'publish_posts' => 'publish_sponsors',
+            'read_post' => 'read_sponsor',
+            'read_private_posts' => 'read_private_sponsors',
+            'delete_post' => 'delete_sponsor'
+        ),
+        'map_meta_cap' => true
     );
 
     register_post_type( 'tf_sponsors', $args);
@@ -216,6 +226,7 @@ function getRegularSponsors ( $atts )
                         AND wposts.post_type = 'tf_sponsors'
                         AND wposts.post_status = 'publish'
                         AND metamain.meta_value = 0
+                        ORDER BY RAND()
                         LIMIT $limit
                      ";
 

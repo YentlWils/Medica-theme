@@ -127,3 +127,58 @@ function set_admin_menu_separator() {
 
 add_action( 'admin_init', 'add_admin_menu_separator' );
 add_action( 'admin_menu', 'set_admin_menu_separator' );
+
+
+function add_theme_caps() {
+    // gets the administrator role
+    $admins = get_role( 'administrator' );
+
+    $admins->add_cap( 'edit_sponsor' );
+    $admins->add_cap( 'edit_sponsors' );
+    $admins->add_cap( 'edit_other_sponsors' );
+    $admins->add_cap( 'publish_sponsors' );
+    $admins->add_cap( 'read_sponsor' );
+    $admins->add_cap( 'read_private_sponsors' );
+    $admins->add_cap( 'delete_sponsor' );
+
+    $admins->add_cap( 'edit_workgroup' );
+    $admins->add_cap( 'edit_workgroups' );
+    $admins->add_cap( 'edit_other_workgroups' );
+    $admins->add_cap( 'publish_workgroups' );
+    $admins->add_cap( 'read_workgroup' );
+    $admins->add_cap( 'read_private_workgroups' );
+    $admins->add_cap( 'delete_workgroup' );
+
+    $admins->add_cap( 'edit_slide' );
+    $admins->add_cap( 'edit_slides' );
+    $admins->add_cap( 'edit_other_slides' );
+    $admins->add_cap( 'publish_slides' );
+    $admins->add_cap( 'read_slide' );
+    $admins->add_cap( 'read_private_slides' );
+    $admins->add_cap( 'delete_slide' );
+
+    $admins->add_cap( 'edit_poi' );
+    $admins->add_cap( 'edit_pois' );
+    $admins->add_cap( 'edit_other_pois' );
+    $admins->add_cap( 'publish_pois' );
+    $admins->add_cap( 'read_poi' );
+    $admins->add_cap( 'read_private_pois' );
+    $admins->add_cap( 'delete_poi' );
+
+    $admins->add_cap( 'edit_link' );
+    $admins->add_cap( 'edit_links' );
+    $admins->add_cap( 'edit_other_links' );
+    $admins->add_cap( 'publish_links' );
+    $admins->add_cap( 'read_link' );
+    $admins->add_cap( 'read_private_links' );
+    $admins->add_cap( 'delete_link' );
+
+    $admins->add_cap( 'edit_event' );
+    $admins->add_cap( 'edit_events' );
+    $admins->add_cap( 'edit_other_events' );
+    $admins->add_cap( 'publish_events' );
+    $admins->add_cap( 'read_event' );
+    $admins->add_cap( 'read_private_events' );
+    $admins->add_cap( 'delete_event' );
+}
+add_action( 'admin_init', 'add_theme_caps');

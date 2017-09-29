@@ -41,6 +41,16 @@ function create_event_postype() {
         'supports'=> array('title', 'thumbnail', 'editor') ,
         'show_in_nav_menus' => true,
         "menu_position" => 6,
+        'capabilities' => array(
+            'edit_post' => 'edit_event',
+            'edit_posts' => 'edit_events',
+            'edit_others_posts' => 'edit_other_events',
+            'publish_posts' => 'publish_events',
+            'read_post' => 'read_event',
+            'read_private_posts' => 'read_private_events',
+            'delete_post' => 'delete_event'
+        ),
+        'map_meta_cap' => true
     );
 
     register_post_type( 'tf_events', $args);

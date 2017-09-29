@@ -40,6 +40,16 @@ function create_links_postype() {
         'supports'=> array('title', 'thumbnail') ,
         'show_in_nav_menus' => false,
         "menu_position" => 6,
+        'capabilities' => array(
+            'edit_post' => 'edit_link',
+            'edit_posts' => 'edit_links',
+            'edit_others_posts' => 'edit_other_links',
+            'publish_posts' => 'publish_links',
+            'read_post' => 'read_link',
+            'read_private_posts' => 'read_private_links',
+            'delete_post' => 'delete_link'
+        ),
+        'map_meta_cap' => true
     );
 
     register_post_type( 'tf_links', $args);

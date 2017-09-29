@@ -40,6 +40,16 @@ function create_poi_postype() {
         'supports'=> array('title') ,
         'show_in_nav_menus' => false,
         "menu_position" => 6,
+        'capabilities' => array(
+            'edit_post' => 'edit_poi',
+            'edit_posts' => 'edit_pois',
+            'edit_others_posts' => 'edit_other_pois',
+            'publish_posts' => 'publish_pois',
+            'read_post' => 'read_poi',
+            'read_private_posts' => 'read_private_pois',
+            'delete_post' => 'delete_poi'
+        ),
+        'map_meta_cap' => true
     );
 
     register_post_type( 'tf_poi', $args);

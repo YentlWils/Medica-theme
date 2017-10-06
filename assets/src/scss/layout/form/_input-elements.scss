@@ -8,7 +8,7 @@ input{
     }
 
 
-    &[type='submit'], button{
+    &[type='submit'], &[type='button'], button{
         border-color: $beta-color;
         background-color: $beta-color;
         transition: all 0.25s ease-in-out;
@@ -24,6 +24,30 @@ input{
         &:active{
             background-color: darken($beta-color, 10);
         }
+    }
+}
+
+button{
+    font-size: 1.2em !important;
+    padding: 10px !important;
+    border-color: $beta-color !important;
+    background-color: $beta-color !important;
+    transition: all 0.25s ease-in-out !important;
+    color: white !important;
+
+    box-shadow: none !important;
+    border: none !important;
+
+    font-weight: lighter !important;
+    border-radius: 0px !important;
+    text-shadow: none !important;
+
+    &:hover, &:focus{
+        background-color: lighten($beta-color, 10) !important;
+    }
+
+    &:active{
+        background-color: darken($beta-color, 10) !important;
     }
 }
 

@@ -269,10 +269,9 @@ function getEvents ( $atts )
     global $wpdb;
     $querystr = "
                         SELECT *
-                        FROM $wpdb->posts wposts, $wpdb->postmeta metastart, $wpdb->postmeta metaend
-                        WHERE (wposts.ID = metastart.post_id AND wposts.ID = metaend.post_id)
-                        AND (metaend.meta_key = 'tf_events_enddate' AND metaend.meta_value > $today6am )
-                        AND metastart.meta_key = 'tf_events_enddate'
+                        FROM $wpdb->posts wposts, $wpdb->postmeta metastart
+                        WHERE (wposts.ID = metastart.post_id)
+                        AND (metastart.meta_key = 'tf_events_startdate' AND metastart.meta_value > $today6am )
                         AND wposts.post_type = 'tf_events'
                         AND wposts.post_status = 'publish'
                         ORDER BY metastart.meta_value ASC LIMIT $limit
